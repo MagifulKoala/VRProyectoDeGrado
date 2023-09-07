@@ -1710,6 +1710,7 @@ MonoBehaviour:
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
   fireDamage: 1
   lifePoints: 5
+  radiusOffset: 1
   particleSystemOn: 0
   isOnfire: 0
   isMelting: 0
@@ -3304,7 +3305,8 @@ MonoBehaviour:
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
   fireDamage: 1
-  lifePoints: 3
+  lifePoints: 50
+  radiusOffset: 1
   particleSystemOn: 0
   isOnfire: 0
   isMelting: 0
@@ -6977,7 +6979,7 @@ Transform:
   m_GameObject: {fileID: 1872591504}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.265, y: 1.9836063, z: -2.117}
+  m_LocalPosition: {x: 1.495, y: 1.256, z: -1.85}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7175,7 +7177,8 @@ MonoBehaviour:
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
   fireDamage: 1
-  lifePoints: 3
+  lifePoints: 9999
+  radiusOffset: 3.2
   particleSystemOn: 0
   isOnfire: 0
   isMelting: 0

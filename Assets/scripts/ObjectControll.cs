@@ -11,6 +11,7 @@ public class ObjectControll : SimpleObjectController
     [SerializeField] float fireDamage = 1f;
 
     [SerializeField] float lifePoints = 3f;
+     [SerializeField] private float radiusOffset = 1f;
 
     public const string fireParticleTag = "fireParticle";
 
@@ -21,6 +22,7 @@ public class ObjectControll : SimpleObjectController
 
     public bool isOnfire = false;
     public bool isMelting = false;
+   
 
     protected override void Start()
     {
@@ -60,7 +62,7 @@ public class ObjectControll : SimpleObjectController
     private void startParticleSystem(GameObject pParticleSystem)
     {
         GameObject particleObject = Instantiate(pParticleSystem, transform.position, transform.rotation, transform);
-        //particleObject.transform.localScale = transform.localScale + new UnityEngine.Vector3(0.5f,0.5f,0.5f); //scales the particleSystem
+        particleObject.GetComponent<SphereCollider>().radius += radiusOffset; //adjust collider
         ParticleSystem ps = GetComponentInChildren<ParticleSystem>();
         ps.Play();
         particleSystemOn = true;
