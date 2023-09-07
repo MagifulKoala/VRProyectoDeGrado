@@ -15,7 +15,6 @@ public class ObjectControll : SimpleObjectController
 
     public const string fireParticleTag = "fireParticle";
 
-    materialController materialCtrl;
 
 
     public bool particleSystemOn = false; 
@@ -27,10 +26,6 @@ public class ObjectControll : SimpleObjectController
     protected override void Start()
     {
         base.Start(); 
-        if(material != null)
-        {
-            materialCtrl = material.GetComponent<materialController>();
-        }
     }
 
     private void Update()
@@ -62,7 +57,10 @@ public class ObjectControll : SimpleObjectController
     private void startParticleSystem(GameObject pParticleSystem)
     {
         GameObject particleObject = Instantiate(pParticleSystem, transform.position, transform.rotation, transform);
-        particleObject.GetComponent<SphereCollider>().radius += radiusOffset; //adjust collider
+        if(pParticleSystem == onFireParticleSystem)
+        {
+            particleObject.GetComponent<SphereCollider>().radius += radiusOffset; //adjust collider specific to the onFire
+        }
         ParticleSystem ps = GetComponentInChildren<ParticleSystem>();
         ps.Play();
         particleSystemOn = true;

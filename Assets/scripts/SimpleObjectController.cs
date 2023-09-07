@@ -5,23 +5,28 @@ using UnityEngine;
 public class SimpleObjectController : MonoBehaviour
 {
     [SerializeField] public GameObject material;
-    [SerializeField] GameObject[] materials; 
+    [SerializeField] GameObject[] materials;
 
     MeshRenderer objectMeshRenderer;
+    public materialController materialCtrl;
     protected virtual void Start()
     {
-        objectMeshRenderer = GetComponent<MeshRenderer>(); 
-        
+        objectMeshRenderer = GetComponent<MeshRenderer>();
+        if (material != null)
+        {
+            materialCtrl = material.GetComponent<materialController>();
+        }
+
 
         foreach (var item in materials)
         {
-           
-            if(item.Equals(material))
+
+            if (item.Equals(material))
             {
                 materialController materialCtr = item.GetComponent<materialController>();
-                objectMeshRenderer.material = materialCtr.materialVisualMaterial; 
-                material = item; 
-                
+                objectMeshRenderer.material = materialCtr.materialVisualMaterial;
+                material = item;
+
             }
         }
 
@@ -31,21 +36,22 @@ public class SimpleObjectController : MonoBehaviour
     {
         foreach (var item in materials)
         {
-            
 
-            if(item.Equals(pNewMaterial))
+
+            if (item.Equals(pNewMaterial))
             {
-                materialController materialControl = pNewMaterial.GetComponent<materialController>(); 
+                materialController materialControl = pNewMaterial.GetComponent<materialController>();
 
-                objectMeshRenderer.material = materialControl.materialVisualMaterial; 
-                material = item; 
+                objectMeshRenderer.material = materialControl.materialVisualMaterial;
+                materialCtrl = materialControl; 
+                material = item;
             }
         }
-        
+
     }
 
     public GameObject getMaterial()
     {
-        return material; 
+        return material;
     }
 }
