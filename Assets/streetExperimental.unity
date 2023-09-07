@@ -2040,6 +2040,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 06cc253400b51ca4eaca5a10c6f41e48, type: 3}
   - {fileID: 2095905020852077598, guid: bf253d3bcc6d8f2428d1a80ea9f86bc3, type: 3}
   - {fileID: 2095905020852077598, guid: 3f40d430b8c26b4408d68cca4e7bef23, type: 3}
+  lifePoints: 3
 --- !u!1001 &52091120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13563,6 +13564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   materials: []
+  lifePoints: 3
 --- !u!54 &613184036
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13680,6 +13682,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 06cc253400b51ca4eaca5a10c6f41e48, type: 3}
   - {fileID: 2095905020852077598, guid: bf253d3bcc6d8f2428d1a80ea9f86bc3, type: 3}
   - {fileID: 2095905020852077598, guid: 3f40d430b8c26b4408d68cca4e7bef23, type: 3}
+  lifePoints: 3
 --- !u!1001 &613368894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21154,6 +21157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   materials: []
+  lifePoints: 3
 --- !u!54 &1030551156
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21271,6 +21275,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 06cc253400b51ca4eaca5a10c6f41e48, type: 3}
   - {fileID: 2095905020852077598, guid: bf253d3bcc6d8f2428d1a80ea9f86bc3, type: 3}
   - {fileID: 2095905020852077598, guid: 3f40d430b8c26b4408d68cca4e7bef23, type: 3}
+  lifePoints: 3
 --- !u!1001 &1031222915
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29872,6 +29877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 0}
   materials: []
+  lifePoints: 3
 --- !u!54 &1363278418
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29989,6 +29995,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 06cc253400b51ca4eaca5a10c6f41e48, type: 3}
   - {fileID: 2095905020852077598, guid: bf253d3bcc6d8f2428d1a80ea9f86bc3, type: 3}
   - {fileID: 2095905020852077598, guid: 3f40d430b8c26b4408d68cca4e7bef23, type: 3}
+  lifePoints: 3
 --- !u!1 &1364276327
 GameObject:
   m_ObjectHideFlags: 0
@@ -43602,6 +43609,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 06cc253400b51ca4eaca5a10c6f41e48, type: 3}
   - {fileID: 2095905020852077598, guid: bf253d3bcc6d8f2428d1a80ea9f86bc3, type: 3}
   - {fileID: 2095905020852077598, guid: 3f40d430b8c26b4408d68cca4e7bef23, type: 3}
+  lifePoints: 3
 --- !u!54 &1962609199
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -53829,6 +53837,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: bf253d3bcc6d8f2428d1a80ea9f86bc3, type: 3}
   - {fileID: 2095905020852077598, guid: 246630b291c08da4e82c642c3faa0c1a, type: 3}
   - {fileID: 2095905020852077598, guid: 7457140b6c01e9542b777e57a6de2786, type: 3}
+  lifePoints: 3
 --- !u!114 &8262730864586446661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54310,6 +54319,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: bf253d3bcc6d8f2428d1a80ea9f86bc3, type: 3}
   - {fileID: 2095905020852077598, guid: 246630b291c08da4e82c642c3faa0c1a, type: 3}
   - {fileID: 2095905020852077598, guid: 7457140b6c01e9542b777e57a6de2786, type: 3}
+  lifePoints: 3
 --- !u!1001 &8985554585172981420
 PrefabInstance:
   m_ObjectHideFlags: 0

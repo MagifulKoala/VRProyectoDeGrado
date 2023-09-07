@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4934898676850054320}
   - component: {fileID: 8885775190065668171}
   m_Layer: 0
-  m_Name: ice
+  m_Name: wood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,12 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab371cb72ca478549a35e535d1597658, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  materialVisualMaterial: {fileID: 2100000, guid: f51143522acdf614db3bfe93af67f618, type: 2}
+  materialVisualMaterial: {fileID: 2100000, guid: 2da4fc8eec5c7884ea61491f92faf945, type: 2}
   gravity: 1
   bouyancy: 1
-  weight: 1
-  flammable: 0
+  mass: 1
+  isFlammable: 1
   onFire: 0
   explosive: 0
-  canMelt: 1
+  canMelt: 0
   canBreak: 0

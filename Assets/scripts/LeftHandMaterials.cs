@@ -22,8 +22,8 @@ public class LeftHandMaterials : XRDirectInteractor
         {
             currentMaterial = currentObjectController.getMaterial();
 
-            leftHand.GetComponent<ObjectControll>().changeMaterial(currentMaterial);
-            rightHand.GetComponent<ObjectControll>().changeMaterial(currentMaterial);
+            leftHand.GetComponent<SimpleObjectController>().changeMaterial(currentMaterial);
+            rightHand.GetComponent<SimpleObjectController>().changeMaterial(currentMaterial);
         }
         else
         {

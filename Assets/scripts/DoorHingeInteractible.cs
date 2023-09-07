@@ -1,5 +1,5 @@
 using System;
-using System.Collections;   
+using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
 using System.Threading;
@@ -16,16 +16,16 @@ public class DoorHingeInteractible : SimpleHingeInteractible
 
     [SerializeField] Collider closedCollider;
     [SerializeField] Collider allOpenedCollider;
-    
-    [SerializeField] UnityEngine.Vector3 endRotation; 
+
+    [SerializeField] UnityEngine.Vector3 endRotation;
     UnityEngine.Vector3 startRotation;
 
-    
+
     private bool isAllOpened = false;
     private bool isClosed = false;
 
     float startAngleX;
-    
+
 
     protected override void Start()
     {
@@ -37,8 +37,12 @@ public class DoorHingeInteractible : SimpleHingeInteractible
         {
             startAngleX -= 360;
         }
-        comboLock.unlockedAction += OnUnLocked;
-        comboLock.lockedAction += OnLocked;
+        if (comboLock != null)
+        {
+            comboLock.unlockedAction += OnUnLocked;
+            comboLock.lockedAction += OnLocked;
+        }
+
     }
 
     private void OnLocked()
@@ -85,7 +89,7 @@ public class DoorHingeInteractible : SimpleHingeInteractible
     public void checkLimits()
     {
         isClosed = false;
-        isAllOpened = false; 
+        isAllOpened = false;
         float localAnglex = transform.localEulerAngles.x;
 
         if (localAnglex >= 180)
@@ -109,10 +113,10 @@ public class DoorHingeInteractible : SimpleHingeInteractible
         {
             transform.localEulerAngles = startRotation;
         }
-        else if(isAllOpened)
+        else if (isAllOpened)
         {
             transform.localEulerAngles = endRotation;
-            
+
         }
         else
         {
@@ -135,11 +139,11 @@ public class DoorHingeInteractible : SimpleHingeInteractible
             isClosed = true;
             releaseHinge();
         }
-        else if(other == allOpenedCollider)
+        else if (other == allOpenedCollider)
         {
-            isAllOpened = true; 
-            releaseHinge(); 
-        } 
+            isAllOpened = true;
+            releaseHinge();
+        }
 
     }
 }

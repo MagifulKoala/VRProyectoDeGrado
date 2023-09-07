@@ -12,10 +12,10 @@ public class materialController : MonoBehaviour
     //physics attributes
     [SerializeField] public float gravity = 1f;
     [SerializeField] public float bouyancy = 1f;
-    [SerializeField] public float weight = 1f;
+    [SerializeField] public float mass = 1f;
 
     //extra attributes
-    [SerializeField] public bool flammable = false;
+    [SerializeField] public bool isFlammable = false;
     [SerializeField] public bool onFire = false;
     [SerializeField] public bool explosive = false;
     [SerializeField] public bool canMelt = false;
