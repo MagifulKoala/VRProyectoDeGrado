@@ -87,12 +87,13 @@ public class ObjectControll : SimpleObjectController
             {
                 isOnfire = true;
             }
-            else if (materialCtrl.canMelt)
+            if (materialCtrl.canMelt)
             {
                 isMelting = true;
             }
-            else if(materialCtrl.explosive)
+            if(materialCtrl.explosive)
             {
+                Debug.Log("explosive recognized");
                 explosionInitiated = true; 
                 ExplosionTriggered?.Invoke(); 
             }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7539408882453106377}
   - component: {fileID: 529146773470091555}
   - component: {fileID: 6908526558704657397}
+  - component: {fileID: 2683674668881678698}
   m_Layer: 0
   m_Name: explosiveInstance
   m_TagString: Untagged
@@ -66,8 +67,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f7bc5989040cf48ba32e2ee1cd0b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosiveParticleSystem: {fileID: 0}
   explosiveForce: 200
   finalExplosionSize: 3
   explosionExpansionRate: 1
   explosionTimer: 5
   explosionTriggered: 0
+--- !u!114 &2683674668881678698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8072844743397403980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31f5ac2a971c3b248ac0f667298a55b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalTime: 0
+  timeLeft: 0
+  isOn: 0
+  timerHasFinished: 0
