@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.PlayerLoop;
 
 public class ObjectControll : SimpleObjectController
@@ -8,24 +9,29 @@ public class ObjectControll : SimpleObjectController
 
     [SerializeField] GameObject meltingParticleSystem;
     [SerializeField] GameObject onFireParticleSystem;
+    [SerializeField] GameObject explosiveInstance; 
     [SerializeField] float fireDamage = 1f;
-
     [SerializeField] float lifePoints = 3f;
-     [SerializeField] private float radiusOffset = 1f;
+    [SerializeField] private float radiusOffset = 1f;
 
     public const string fireParticleTag = "fireParticle";
-
-
-
     public bool particleSystemOn = false; 
 
     public bool isOnfire = false;
     public bool isMelting = false;
+
+    public bool explosionInitiated = false; 
+
+    public UnityEvent ExplosionTriggered; 
    
 
     protected override void Start()
     {
         base.Start(); 
+        if(material.name == "explosive")
+        {
+            changeMaterialSpecial(material); 
+        }
     }
 
     private void Update()
@@ -66,9 +72,6 @@ public class ObjectControll : SimpleObjectController
         particleSystemOn = true;
     }
 
-
-
-
     public void applyMaterialProperties()
     {
         Rigidbody rb = GetComponent<Rigidbody>();
@@ -77,7 +80,7 @@ public class ObjectControll : SimpleObjectController
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("trigger enteres ObjectControll + " + other.gameObject);
+        //Debug.Log("trigger enters ObjectControll + " + other.gameObject);
         if (other.gameObject.tag == fireParticleTag)
         {
             if (materialCtrl.isFlammable)
@@ -88,10 +91,14 @@ public class ObjectControll : SimpleObjectController
             {
                 isMelting = true;
             }
+            else if(materialCtrl.explosive)
+            {
+                explosionInitiated = true; 
+                ExplosionTriggered?.Invoke(); 
+            }
         }
 
     }
-
 
     private void recieveDamage(float damageAmount)
     {
@@ -99,6 +106,15 @@ public class ObjectControll : SimpleObjectController
         if (lifePoints <= 0)
         {
             Destroy(gameObject, 1);
+        }
+    }
+
+    public void changeMaterialSpecial(GameObject pNewMaterial)
+    {
+        changeMaterial(pNewMaterial);
+        if(material.name == "explosive")
+        {
+            Instantiate(explosiveInstance, transform.position, transform.rotation, transform); 
         }
     }
 }

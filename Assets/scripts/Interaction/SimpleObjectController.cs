@@ -12,12 +12,18 @@ public class SimpleObjectController : MonoBehaviour
     protected virtual void Start()
     {
         objectMeshRenderer = GetComponent<MeshRenderer>();
+
+
         if (material != null)
         {
             materialCtrl = material.GetComponent<materialController>();
+            objectMeshRenderer.material = materialCtrl.materialVisualMaterial;
         }
-
-
+        else
+        {
+            Debug.Log("material has not been assigned");
+        }
+        /*
         foreach (var item in materials)
         {
 
@@ -29,6 +35,7 @@ public class SimpleObjectController : MonoBehaviour
 
             }
         }
+        */
 
     }
 
