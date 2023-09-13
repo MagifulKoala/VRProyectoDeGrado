@@ -11,6 +11,7 @@ public class Timer : MonoBehaviour
 
     public bool timerHasFinished = false; 
 
+
     public void setTotalTime(float pTime) => totalTime = pTime;
 
     public void startTimer()
@@ -24,6 +25,7 @@ public class Timer : MonoBehaviour
     {
         if(isOn)
         {
+            Debug.Log(timeLeft);
             timeLeft -= Time.deltaTime; 
             if(timeLeft <= 0)
             {

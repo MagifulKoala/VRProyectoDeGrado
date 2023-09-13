@@ -4,49 +4,64 @@ using UnityEngine;
 
 public class ExplosiveMaterial : MonoBehaviour
 {
-    [SerializeField] ParticleSystem explosiveParticleSystem; 
-    [SerializeField] float explosiveForce = 200f;
+    [SerializeField] ParticleSystem explosiveParticleSystem;
+    [SerializeField] public float explosivePower = 200f;
     [SerializeField] float finalExplosionSize = 3f;
-    [SerializeField] float explosionExpansionRate = 1f; 
-    [SerializeField] float explosionTime = 5f; 
-    [SerializeField] bool explosionTriggered = false; 
-    ObjectControll parentObjectControll; 
+    [SerializeField] float explosionExpansionRate = 1f;
+    [SerializeField] float explosionTime = 5f;
+    [SerializeField] bool explosionTriggered = false;
+    public bool explosionInProgress = false; 
+    ObjectControll parentObjectControll;
     SphereCollider sphereCollider;
-    Timer timer; 
+    Timer timer;
+    bool timerIsOn = false; 
 
     private void Start()
     {
-        sphereCollider = GetComponent<SphereCollider>();    
+        sphereCollider = GetComponent<SphereCollider>();
         timer = GetComponent<Timer>();
-        if(transform.parent != null)
+        if (transform.parent != null)
         {
             parentObjectControll = transform.parent.GetComponent<ObjectControll>();
-            parentObjectControll.ExplosionTriggered.AddListener(generateExplosion);  
+            parentObjectControll.ExplosionTriggered.AddListener(generateExplosion);
         }
-        if(timer != null)
+        if (timer != null)
         {
-            timer.setTotalTime(explosionTime); 
+            timer.setTotalTime(explosionTime);
         }
     }
 
 
     private void Update()
     {
-        if(explosionTriggered)
+        if (explosionTriggered)
         {
-            Debug.Log("BOOOM");
-            explosionTriggered = false;
-            Destroy(transform.parent.gameObject,0); 
+            if(!timerIsOn)
+            {
+                timer.startTimer(); 
+                timerIsOn = true; 
+            }
+
+            if (timer.timerHasFinished)
+            {
+                Debug.Log("BOOOM");
+                explosionInProgress = true; 
+                sphereCollider.radius += explosionExpansionRate;
+                if (sphereCollider.radius >= finalExplosionSize)
+                {
+                    Debug.Log("final radius is:" + sphereCollider.radius);
+                    explosionTriggered = false;
+                    Destroy(transform.parent.gameObject, 0);
+                }
+
+            }
         }
-  
+
     }
 
-    private void generateExplosion()
-    {
-      explosionTriggered = true; 
-    }
+    private void generateExplosion() => explosionTriggered=true; 
 
- 
+
 
 
 }

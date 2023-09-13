@@ -1,36 +1,41 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Callbacks;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.PlayerLoop;
 
+[RequireComponent(typeof(Rigidbody))]
 public class ObjectControll : SimpleObjectController
 {
 
     [SerializeField] GameObject meltingParticleSystem;
     [SerializeField] GameObject onFireParticleSystem;
-    [SerializeField] GameObject explosiveInstance; 
+    [SerializeField] GameObject explosiveInstance;
     [SerializeField] float fireDamage = 1f;
     [SerializeField] float lifePoints = 3f;
     [SerializeField] private float radiusOffset = 1f;
+    public Rigidbody rb;
 
     public const string fireParticleTag = "fireParticle";
-    public bool particleSystemOn = false; 
+    public bool particleSystemOn = false;
 
     public bool isOnfire = false;
     public bool isMelting = false;
 
-    public bool explosionInitiated = false; 
+    public bool explosionInitiated = false;
 
-    public UnityEvent ExplosionTriggered; 
-   
+    public UnityEvent ExplosionTriggered;
+
 
     protected override void Start()
     {
-        base.Start(); 
-        if(material.name == "explosive")
+        base.Start();
+        rb = GetComponent<Rigidbody>();
+        if (material.name == "explosive")
         {
-            changeMaterialSpecial(material); 
+            changeMaterialSpecial(material);
         }
     }
 
@@ -63,7 +68,7 @@ public class ObjectControll : SimpleObjectController
     private void startParticleSystem(GameObject pParticleSystem)
     {
         GameObject particleObject = Instantiate(pParticleSystem, transform.position, transform.rotation, transform);
-        if(pParticleSystem == onFireParticleSystem)
+        if (pParticleSystem == onFireParticleSystem)
         {
             particleObject.GetComponent<SphereCollider>().radius += radiusOffset; //adjust collider specific to the onFire
         }
@@ -91,13 +96,34 @@ public class ObjectControll : SimpleObjectController
             {
                 isMelting = true;
             }
-            if(materialCtrl.explosive)
+            if (materialCtrl.explosive)
             {
                 Debug.Log("explosive recognized");
-                explosionInitiated = true; 
-                ExplosionTriggered?.Invoke(); 
+                explosionInitiated = true;
+                ExplosionTriggered?.Invoke();
             }
         }
+        if (other.gameObject.CompareTag("explosive"))
+        {
+            ExplosiveMaterial explosiveMaterial = other.gameObject.GetComponent<ExplosiveMaterial>();
+            if (explosiveMaterial.explosionInProgress)
+            {
+                Debug.Log("explosionInProgress recognized");
+                float explosionPower = explosiveMaterial.explosivePower;
+                applyExplotion(explosionPower);
+            }
+        }
+
+
+    }
+
+    private void applyExplotion(float pExplosionMagnitud)
+    {
+        rb.isKinematic = false;
+        rb.constraints = RigidbodyConstraints.None;
+        rb.drag = 0.2f;
+        UnityEngine.Vector3 explosionForceVector = UnityEngine.Random.onUnitSphere;
+        rb.AddForce(explosionForceVector * pExplosionMagnitud);
 
     }
 
@@ -113,9 +139,9 @@ public class ObjectControll : SimpleObjectController
     public void changeMaterialSpecial(GameObject pNewMaterial)
     {
         changeMaterial(pNewMaterial);
-        if(material.name == "explosive")
+        if (material.name == "explosive")
         {
-            Instantiate(explosiveInstance, transform.position, transform.rotation, transform); 
+            Instantiate(explosiveInstance, transform.position, transform.rotation, transform);
         }
     }
 }

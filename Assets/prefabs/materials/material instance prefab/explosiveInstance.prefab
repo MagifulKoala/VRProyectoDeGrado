@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2683674668881678698}
   m_Layer: 0
   m_Name: explosiveInstance
-  m_TagString: Untagged
+  m_TagString: explosive
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68,11 +68,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosiveParticleSystem: {fileID: 0}
-  explosiveForce: 200
+  explosivePower: 1500
   finalExplosionSize: 3
-  explosionExpansionRate: 1
-  explosionTimer: 5
+  explosionExpansionRate: 0.1
+  explosionTime: 10
   explosionTriggered: 0
+  explosionInProgress: 0
 --- !u!114 &2683674668881678698
 MonoBehaviour:
   m_ObjectHideFlags: 0
