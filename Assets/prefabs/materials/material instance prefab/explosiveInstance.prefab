@@ -67,11 +67,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f7bc5989040cf48ba32e2ee1cd0b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosiveParticleSystem: {fileID: 0}
+  explosiveParticleSystem: {fileID: 8066676672848378873, guid: f37d380d1d7a1e9429fadb5e1443f64c, type: 3}
   explosivePower: 1500
   finalExplosionSize: 3
-  explosionExpansionRate: 0.1
-  explosionTime: 20
+  explosionExpansionRate: 0.2
+  explosionTime: 15
   explosionTriggered: 0
   explosionInProgress: 0
 --- !u!114 &2683674668881678698

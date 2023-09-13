@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class ExplosiveMaterial : MonoBehaviour
 {
-    [SerializeField] ParticleSystem explosiveParticleSystem;
+    [SerializeField] GameObject explosiveParticleSystem;
     [SerializeField] public float explosivePower = 200f;
     [SerializeField] float finalExplosionSize = 3f;
     [SerializeField] float explosionExpansionRate = 1f;
     [SerializeField] float explosionTime = 5f;
     [SerializeField] bool explosionTriggered = false;
-    public bool explosionInProgress = false; 
+    public bool explosionInProgress = false;
     ObjectControll parentObjectControll;
     SphereCollider sphereCollider;
     Timer timer;
-    bool timerIsOn = false; 
+    bool timerIsOn = false;
+    bool particleSystemTriggered = false;
 
     private void Start()
     {
@@ -36,20 +37,25 @@ public class ExplosiveMaterial : MonoBehaviour
     {
         if (explosionTriggered)
         {
-            if(!timerIsOn)
+            if (!timerIsOn)
             {
-                timer.startTimer(); 
-                timerIsOn = true; 
+                timer.startTimer();
+                timerIsOn = true;
             }
 
             if (timer.timerHasFinished)
             {
-                Debug.Log("BOOOM");
-                explosionInProgress = true; 
+                //Debug.Log("BOOOM");
+                explosionInProgress = true;
                 sphereCollider.radius += explosionExpansionRate;
+                if (!particleSystemTriggered)
+                {
+                    startParticleSystem(explosiveParticleSystem);
+                }
+
                 if (sphereCollider.radius >= finalExplosionSize)
                 {
-                    Debug.Log("final radius is:" + sphereCollider.radius);
+                    //Debug.Log("final radius is:" + sphereCollider.radius);
                     explosionTriggered = false;
                     Destroy(transform.parent.gameObject, 0);
                 }
@@ -59,7 +65,15 @@ public class ExplosiveMaterial : MonoBehaviour
 
     }
 
-    private void generateExplosion() => explosionTriggered=true; 
+    private void startParticleSystem(GameObject pParticleSystem)
+    {
+        Instantiate(pParticleSystem, transform.position, transform.rotation, transform);
+        ParticleSystem ps = GetComponentInChildren<ParticleSystem>();
+        ps.Play();
+        particleSystemTriggered = true;
+    }
+
+    private void generateExplosion() => explosionTriggered = true;
 
 
 
