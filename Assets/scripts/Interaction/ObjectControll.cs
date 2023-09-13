@@ -70,7 +70,7 @@ public class ObjectControll : SimpleObjectController
         GameObject particleObject = Instantiate(pParticleSystem, transform.position, transform.rotation, transform);
         if (pParticleSystem == onFireParticleSystem)
         {
-            particleObject.GetComponent<SphereCollider>().radius += radiusOffset; //adjust collider specific to the onFire
+            //particleObject.GetComponent<SphereCollider>().radius += radiusOffset; //adjust collider specific to the onFire
         }
         ParticleSystem ps = GetComponentInChildren<ParticleSystem>();
         ps.Play();

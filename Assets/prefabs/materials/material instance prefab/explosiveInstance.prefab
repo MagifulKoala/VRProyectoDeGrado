@@ -71,7 +71,7 @@ MonoBehaviour:
   explosivePower: 1500
   finalExplosionSize: 3
   explosionExpansionRate: 0.1
-  explosionTime: 10
+  explosionTime: 20
   explosionTriggered: 0
   explosionInProgress: 0
 --- !u!114 &2683674668881678698
