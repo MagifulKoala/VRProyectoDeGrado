@@ -8,16 +8,27 @@ public class SimpleObjectController : MonoBehaviour
     [SerializeField] GameObject[] materials;
 
     MeshRenderer objectMeshRenderer;
+    SkinnedMeshRenderer skinnedMeshRenderer;
     public materialController materialCtrl;
     protected virtual void Start()
     {
         objectMeshRenderer = GetComponent<MeshRenderer>();
+        skinnedMeshRenderer = GetComponent<SkinnedMeshRenderer>();
 
 
         if (material != null)
         {
             materialCtrl = material.GetComponent<materialController>();
-            objectMeshRenderer.material = materialCtrl.materialVisualMaterial;
+            if (objectMeshRenderer != null)
+            {
+                objectMeshRenderer.material = materialCtrl.materialVisualMaterial;
+            }
+            else if (skinnedMeshRenderer != null)
+            {
+                skinnedMeshRenderer.material = materialCtrl.materialVisualMaterial;
+            }
+
+
         }
         else
         {
@@ -49,8 +60,16 @@ public class SimpleObjectController : MonoBehaviour
             {
                 materialController materialControl = pNewMaterial.GetComponent<materialController>();
 
-                objectMeshRenderer.material = materialControl.materialVisualMaterial;
-                materialCtrl = materialControl; 
+                if (objectMeshRenderer != null)
+                {
+                    objectMeshRenderer.material = materialControl.materialVisualMaterial;
+                }
+                else if (skinnedMeshRenderer != null)
+                {
+                    skinnedMeshRenderer.material = materialControl.materialVisualMaterial;
+                }
+
+                materialCtrl = materialControl;
                 material = item;
             }
         }
