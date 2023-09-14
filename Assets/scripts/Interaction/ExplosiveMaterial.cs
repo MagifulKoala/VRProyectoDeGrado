@@ -57,7 +57,7 @@ public class ExplosiveMaterial : MonoBehaviour
                 {
                     //Debug.Log("final radius is:" + sphereCollider.radius);
                     explosionTriggered = false;
-                    Destroy(transform.parent.gameObject, 0);
+                    Destroy(transform.parent.gameObject, 0.5f);
                 }
 
             }
