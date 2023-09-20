@@ -28,6 +28,10 @@ public class RightHandMaterials : XRDirectInteractor
                 {
                     currentObjControl.changeMaterialSpecial(newMaterial);
                 }
+                else if(currentObjControl.initializeMaterialInChildren)
+                {
+                    currentObjControl.changeMaterialInChildren(newMaterial); 
+                }
                 else
                 {
                     currentObjControl.changeMaterial(newMaterial);

@@ -6,6 +6,7 @@ public class SimpleObjectController : MonoBehaviour
 {
     [SerializeField] public GameObject material;
     [SerializeField] GameObject[] materials;
+    [SerializeField] public bool initializeMaterialInChildren; 
 
     MeshRenderer objectMeshRenderer;
     SkinnedMeshRenderer skinnedMeshRenderer;
@@ -27,8 +28,10 @@ public class SimpleObjectController : MonoBehaviour
             {
                 skinnedMeshRenderer.material = materialCtrl.materialVisualMaterial;
             }
-
-
+            else if(initializeMaterialInChildren)
+            {
+                changeMaterialInChildren(material); 
+            }
         }
         else
         {
@@ -75,6 +78,44 @@ public class SimpleObjectController : MonoBehaviour
         }
 
     }
+
+    public void changeMaterial(GameObject pNewMaterial, GameObject pObject)
+    {
+        //Debug.Log("change New Material invoked" + " " + pNewMaterial + " object: " + pObject);
+
+        MeshRenderer newObjectMeshRenderer = pObject.GetComponent<MeshRenderer>(); 
+        SkinnedMeshRenderer newSkinnedMeshRender = pObject.GetComponent<SkinnedMeshRenderer>();
+
+        foreach (var item in materials)
+        {
+            if (item.Equals(pNewMaterial))
+            {
+                materialController materialControl = pNewMaterial.GetComponent<materialController>();
+
+                if (newObjectMeshRenderer != null)
+                {
+                    newObjectMeshRenderer.material = materialControl.materialVisualMaterial;
+                }
+                else if (newSkinnedMeshRender != null)
+                {
+                    newSkinnedMeshRender.material = materialControl.materialVisualMaterial;
+                }
+
+                materialCtrl = materialControl;
+                material = item;
+            }
+        }
+
+    }
+
+    public void changeMaterialInChildren(GameObject pNewMaterial)
+    {
+        foreach (Transform child in transform)
+        {
+            changeMaterial(pNewMaterial, child.gameObject); 
+        }
+    }
+
 
     public GameObject getMaterial()
     {

@@ -2,18 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class characterDialogue : MonoBehaviour
 {
     
     [SerializeField] string[] textLines;
     [SerializeField] TMP_Text panelText;
+    [SerializeField] public bool dialogueStarted = false; 
     Timer dialogueTimer;
-    [SerializeField] bool dialogueStarted = false; 
     int currentLine = 0; 
     float textChangeTime = 3f; 
-
     bool timerHasStarted = false; 
+    bool hasPlayed = false;
+    public UnityEvent dialogueEndedEvent; 
+    public UnityEvent dialogueStartedEvent; 
 
     void Start()
     {
@@ -23,7 +26,7 @@ public class characterDialogue : MonoBehaviour
 
     void Update()
     {
-        if(dialogueStarted)
+        if(dialogueStarted && !hasPlayed)
         {
             changePanelText(textLines[currentLine]); 
             if(!timerHasStarted)
@@ -34,7 +37,7 @@ public class characterDialogue : MonoBehaviour
             if(dialogueTimer.timerHasFinished)
             {
                 timerHasStarted = false; 
-                if(currentLine < textLines.Length)
+                if(currentLine < textLines.Length - 1)
                 {
                     currentLine++;
                 }
@@ -42,6 +45,9 @@ public class characterDialogue : MonoBehaviour
                 {
                     currentLine = 0;
                     dialogueStarted = false; 
+                    changePanelText("");
+                    dialogueEndedEvent?.Invoke(); 
+                    hasPlayed = true; 
                 }
                 
             }
@@ -49,9 +55,10 @@ public class characterDialogue : MonoBehaviour
 
     }
 
-    private void startDialogue()
+    public void startDialogue()
     {
         dialogueStarted = true; 
+        //dialogueStartedEvent?.Invoke(); 
     }
 
     private void changePanelText(string pNewText)
