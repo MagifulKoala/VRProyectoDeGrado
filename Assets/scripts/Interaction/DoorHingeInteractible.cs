@@ -5,19 +5,22 @@ using System.Numerics;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.Events;
-
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class DoorHingeInteractible : SimpleHingeInteractible
 {
     [SerializeField] Transform doorObject;
     [SerializeField] ComboLock comboLock;
+    [SerializeField] XRSocketInteractor doorSocket; 
 
     [SerializeField] UnityEngine.Vector3 limitAngles = new UnityEngine.Vector3(0f, 0f, 0f);
 
     [SerializeField] Collider closedCollider;
     [SerializeField] Collider allOpenedCollider;
 
-    [SerializeField] UnityEngine.Vector3 endRotation;
+    [SerializeField] UnityEngine.Vector3 allOpenRotation;
+    [SerializeField] bool useEndRotationClosed;
+    [SerializeField] UnityEngine.Vector3 endRotationClosed;
     UnityEngine.Vector3 startRotation;
 
 
@@ -49,14 +52,12 @@ public class DoorHingeInteractible : SimpleHingeInteractible
     {
         Debug.Log("OnLocked door hinge interactible called");
         OnLock();
-        //return null; 
     }
 
     private void OnUnLocked()
     {
         Debug.Log("OnUnLocked door hinge interactible called");
         UnLock();
-        //return null; 
     }
 
 
@@ -111,11 +112,18 @@ public class DoorHingeInteractible : SimpleHingeInteractible
 
         if (isClosed)
         {
-            transform.localEulerAngles = startRotation;
+            if (useEndRotationClosed)
+            {
+                transform.localEulerAngles = endRotationClosed; 
+            }
+            else
+            {
+                transform.localEulerAngles = startRotation;
+            }
         }
         else if (isAllOpened)
         {
-            transform.localEulerAngles = endRotation;
+            transform.localEulerAngles = allOpenRotation;
 
         }
         else

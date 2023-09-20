@@ -40489,10 +40489,13 @@ MonoBehaviour:
   magnitudeLimtis: 0.259
   doorObject: {fileID: 8581444041258419818}
   comboLock: {fileID: 3660372846238431460}
+  doorSocket: {fileID: 0}
   limitAngles: {x: 8, y: 0, z: 0}
   closedCollider: {fileID: 5210037454839659682}
   allOpenedCollider: {fileID: 3055684531300609706}
-  endRotation: {x: 0, y: -90, z: 0}
+  allOpenRotation: {x: 0, y: 0, z: 0}
+  useEndRotationClosed: 0
+  endRotationClosed: {x: 0, y: 0, z: 0}
 --- !u!33 &4105970550303876276
 MeshFilter:
   m_ObjectHideFlags: 0
