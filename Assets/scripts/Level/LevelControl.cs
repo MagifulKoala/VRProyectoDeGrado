@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class LevelControl : MonoBehaviour
 {
     [SerializeField] Transform spawnPoint;
     [SerializeField] GameObject xrOrigin;
+    [SerializeField] ContinuousMoveProviderBase continuousMoveProvider; 
+    [SerializeField] bool resetXROrigin; 
     UnityEvent enableLeftHandPowers;
 
 
@@ -25,13 +28,29 @@ public class LevelControl : MonoBehaviour
 
     }
 
+    public bool checkPlayerPosition(UnityEngine.Vector3 pPosition)
+    {
+        UnityEngine.Vector3 playerPos = xrOrigin.transform.position;
+        if(playerPos == playerPos)
+        {
+            return true;
+        }
+        else
+        {
+            return false; 
+        }
+    }
+
 
     public void resetPlayer()
     {
-        Debug.Log("player pos:" + xrOrigin.transform.position);
-        Debug.Log("respawn pos:" + spawnPoint.transform.position);
+        continuousMoveProvider.useGravity = false;
+
+        Debug.Log("player reset");
         xrOrigin.transform.position = spawnPoint.transform.position;
         xrOrigin.transform.localEulerAngles = spawnPoint.transform.localEulerAngles;
+
+        continuousMoveProvider.useGravity = true;
  
     }
 
@@ -39,10 +58,11 @@ public class LevelControl : MonoBehaviour
     {
         if (other.tag.Equals("worldBarrier"))
         {
-            //resetPlayer();
-            reloadLevel();
+            reloadLevel(); 
         }
     }
+
+
 
 
 
