@@ -297,7 +297,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &999414704835407476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,12 +346,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 963a32a5dde77cf46817b562ebbb54bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textLines:
-  - hi
-  - this is
-  - a test
+  initialTextLines: []
+  triggeredTextLines: []
   panelText: {fileID: 6180811597191172206}
-  dialogueStarted: 0
+  initialDialogueStarted: 0
+  triggeredDialogueStarted: 0
+  dialogueEndedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogueStartedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &8400674837504232292
 MonoBehaviour:
   m_ObjectHideFlags: 0

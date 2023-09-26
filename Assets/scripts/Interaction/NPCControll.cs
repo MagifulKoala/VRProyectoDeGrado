@@ -12,7 +12,10 @@ public class NPCControll : MonoBehaviour
     private const string conditionPlayerEntered = "playerEntered";
     private const string conditionDialogueFinished = "dialogueFinished";
     bool hasPlayed = false;
+    public UnityEvent playerFirstDetectedEvent;
     public UnityEvent playerDetectedEvent;
+    public UnityEvent playerExitedEvent;
+
 
     private void Start()
     {
@@ -21,16 +24,24 @@ public class NPCControll : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.tag);
+        //Debug.Log(other.gameObject.tag);
         if (other.gameObject.tag.Equals(playerTag))
         {
+            playerDetectedEvent?.Invoke();
             if (!hasPlayed)
             {
-                playerDetectedEvent?.Invoke();
-                hasPlayed = true; 
+                playerFirstDetectedEvent?.Invoke();
+                hasPlayed = true;
             }
         }
+    }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag.Equals(playerTag))
+        {
+            playerExitedEvent?.Invoke(); 
+        }
     }
 
     public void setAnimationGreet()
