@@ -6,7 +6,8 @@ public class SimpleObjectController : MonoBehaviour
 {
     [SerializeField] public GameObject material;
     [SerializeField] GameObject[] materials;
-    [SerializeField] public bool initializeMaterialInChildren; 
+    [SerializeField] public bool initializeMaterialInChildren;
+    [SerializeField] bool dontInitializeMaterial = false;
 
     MeshRenderer objectMeshRenderer;
     SkinnedMeshRenderer skinnedMeshRenderer;
@@ -17,26 +18,38 @@ public class SimpleObjectController : MonoBehaviour
         skinnedMeshRenderer = GetComponent<SkinnedMeshRenderer>();
 
 
-        if (material != null)
+        if (!dontInitializeMaterial)
         {
-            materialCtrl = material.GetComponent<materialController>();
-            if (objectMeshRenderer != null)
+            if (material != null)
             {
-                objectMeshRenderer.material = materialCtrl.materialVisualMaterial;
+                materialCtrl = material.GetComponent<materialController>();
+                if (objectMeshRenderer != null)
+                {
+                    if (objectMeshRenderer.materials.Length > 1)
+                    {
+                        objectMeshRenderer.materials =
+                        initializeVisualMaterialList(objectMeshRenderer.materials, materialCtrl.materialVisualMaterial);
+                    }
+                    else
+                    {
+                        objectMeshRenderer.material = materialCtrl.materialVisualMaterial;
+                    }
+                }
+                else if (skinnedMeshRenderer != null)
+                {
+                    skinnedMeshRenderer.material = materialCtrl.materialVisualMaterial;
+                }
+                else if (initializeMaterialInChildren)
+                {
+                    changeMaterialInChildren(material);
+                }
             }
-            else if (skinnedMeshRenderer != null)
+            else
             {
-                skinnedMeshRenderer.material = materialCtrl.materialVisualMaterial;
-            }
-            else if(initializeMaterialInChildren)
-            {
-                changeMaterialInChildren(material); 
+                Debug.Log("material has not been assigned");
             }
         }
-        else
-        {
-            Debug.Log("material has not been assigned");
-        }
+
         /*
         foreach (var item in materials)
         {
@@ -65,7 +78,15 @@ public class SimpleObjectController : MonoBehaviour
 
                 if (objectMeshRenderer != null)
                 {
-                    objectMeshRenderer.material = materialControl.materialVisualMaterial;
+                    if (objectMeshRenderer.materials.Length > 1)
+                    {
+                        objectMeshRenderer.materials =
+                        initializeVisualMaterialList(objectMeshRenderer.materials, materialControl.materialVisualMaterial);
+                    }
+                    else
+                    {
+                        objectMeshRenderer.material = materialControl.materialVisualMaterial;
+                    }
                 }
                 else if (skinnedMeshRenderer != null)
                 {
@@ -83,7 +104,7 @@ public class SimpleObjectController : MonoBehaviour
     {
         //Debug.Log("change New Material invoked" + " " + pNewMaterial + " object: " + pObject);
 
-        MeshRenderer newObjectMeshRenderer = pObject.GetComponent<MeshRenderer>(); 
+        MeshRenderer newObjectMeshRenderer = pObject.GetComponent<MeshRenderer>();
         SkinnedMeshRenderer newSkinnedMeshRender = pObject.GetComponent<SkinnedMeshRenderer>();
 
         foreach (var item in materials)
@@ -112,10 +133,19 @@ public class SimpleObjectController : MonoBehaviour
     {
         foreach (Transform child in transform)
         {
-            changeMaterial(pNewMaterial, child.gameObject); 
+            changeMaterial(pNewMaterial, child.gameObject);
         }
     }
 
+    public Material[] initializeVisualMaterialList(Material[] pMaterialList, Material pMaterial)
+    {
+        for (int i = 0; i < pMaterialList.Length; i++)
+        {
+            pMaterialList[i] = pMaterial;
+        }
+
+        return pMaterialList;
+    }
 
     public GameObject getMaterial()
     {
