@@ -11,13 +11,18 @@ public class LevelControl : MonoBehaviour
     [SerializeField] GameObject xrOrigin;
     [SerializeField] ContinuousMoveProviderBase continuousMoveProvider; 
     [SerializeField] bool resetXROrigin; 
+
+    [SerializeField] bool useSpawnPoint = true;
     UnityEvent enableLeftHandPowers;
 
 
     private void Start()
     {
+        if(spawnPoint != null && useSpawnPoint)
+        {
         xrOrigin.transform.position = spawnPoint.position;
         xrOrigin.transform.localEulerAngles = spawnPoint.localEulerAngles;
+        }
     }
 
 

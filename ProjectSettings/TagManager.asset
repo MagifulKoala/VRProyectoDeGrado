@@ -12,7 +12,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - InteractableObjects
@@ -35,8 +35,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - LeftHandPhysics
+  - RightHandPhysics
   - 
   - InteractiveObject
   - InteractiveOutlined

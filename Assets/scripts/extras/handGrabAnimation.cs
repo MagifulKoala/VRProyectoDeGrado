@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class handGrabAnimation : MonoBehaviour
@@ -13,13 +14,16 @@ public class handGrabAnimation : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        Debug.Log("animator: " + animator + "  object: " + gameObject);
     }
 
-    public void triggerGrabHandAnimation()
+    public void startGrabHandAnimation()
     {
         if (!handIsGrabbing)
         {
             Debug.Log("triggerhandANim");
+            Debug.Log("animator:" + animator is null);
+            Debug.Log(animator);
             animator.SetBool(grabBool, true);
             handIsGrabbing = true;
         }
