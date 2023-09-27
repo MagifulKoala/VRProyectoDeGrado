@@ -18,6 +18,8 @@ public class LevelControl : MonoBehaviour
 
     private void Start()
     {
+        UnityEngine.XR.XRSettings.gameViewRenderMode = UnityEngine.XR.GameViewRenderMode.RightEye;
+
         if(spawnPoint != null && useSpawnPoint)
         {
         xrOrigin.transform.position = spawnPoint.position;

@@ -3106,7 +3106,7 @@ MonoBehaviour:
   m_SmoothMovement: 0
   m_FollowTightness: 10
   m_SnapThresholdDistance: 10
-  m_Reticle: {fileID: 0}
+  m_Reticle: {fileID: 2071308012393934663, guid: 3f26d587c43a84944bd73837be35acd4, type: 3}
   m_BlockedReticle: {fileID: 0}
   m_StopLineAtFirstRaycastHit: 1
   m_StopLineAtSelection: 0
@@ -7217,7 +7217,7 @@ MonoBehaviour:
   xrOrigin: {fileID: 8326975938041695422}
   continuousMoveProvider: {fileID: 0}
   resetXROrigin: 0
-  useSPaewn: 0
+  useSpawnPoint: 1
 --- !u!1 &8443915876259807913
 GameObject:
   m_ObjectHideFlags: 0
