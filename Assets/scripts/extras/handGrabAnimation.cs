@@ -14,16 +14,16 @@ public class handGrabAnimation : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
-        Debug.Log("animator: " + animator + "  object: " + gameObject);
+        //Debug.Log("animator: " + animator + "  object: " + gameObject);
     }
 
     public void startGrabHandAnimation()
     {
         if (!handIsGrabbing)
         {
-            Debug.Log("triggerhandANim");
-            Debug.Log("animator:" + animator is null);
-            Debug.Log(animator);
+            //Debug.Log("triggerhandANim");
+            //Debug.Log("animator:" + animator is null);
+            //Debug.Log(animator);
             animator.SetBool(grabBool, true);
             handIsGrabbing = true;
         }

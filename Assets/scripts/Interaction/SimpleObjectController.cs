@@ -17,6 +17,16 @@ public class SimpleObjectController : MonoBehaviour
         objectMeshRenderer = GetComponent<MeshRenderer>();
         skinnedMeshRenderer = GetComponent<SkinnedMeshRenderer>();
 
+        if(material != null)
+        {
+            materialCtrl = material.GetComponent<materialController>();
+        }
+        else
+        {
+            Debug.Log("no material detected");
+        }
+
+
 
         if (!dontInitializeMaterial)
         {
@@ -70,7 +80,6 @@ public class SimpleObjectController : MonoBehaviour
     {
         foreach (var item in materials)
         {
-
 
             if (item.Equals(pNewMaterial))
             {
@@ -141,6 +150,12 @@ public class SimpleObjectController : MonoBehaviour
     {
         for (int i = 0; i < pMaterialList.Length; i++)
         {
+            if(pMaterialList[i].name.Equals("outline") || pMaterialList[i].name.Equals("outline (Instance)"))
+            {
+                //Debug.Log("outline encountered");
+                continue; 
+            }
+            //Debug.Log(pMaterialList[i].name + "  " +pMaterialList[i].name.Equals("outline (Instance)"));
             pMaterialList[i] = pMaterial;
         }
 
