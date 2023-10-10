@@ -8,10 +8,15 @@ public class characterDialogue : MonoBehaviour
 {
 
     [Header("Initial dialogue")]
+    [TextArea(3,10)]
     [SerializeField] string[] initialTextLines;
     [Header("trigger dialogue")]
+    [TextArea(3,10)]
     [SerializeField] string[] triggeredTextLines;
     [Header("other")]
+
+    [Header("dialogue list")]
+    [SerializeField] string[,] characterDialogueList;
     [SerializeField] TMP_Text panelText;
     [SerializeField] public bool initialDialogueStarted = false;
     [SerializeField] public bool triggeredDialogueStarted = false;
@@ -20,10 +25,12 @@ public class characterDialogue : MonoBehaviour
     float textChangeTime = 3f;
     bool timerHasStarted = false;
     bool hasPlayed = false;
+    bool checkPointReached = false;
+    bool startedWriting = false;
     public UnityEvent dialogueEndedEvent;
     public UnityEvent dialogueStartedEvent;
     public UnityEvent triggerDialogueEndedEvent;
-    
+
 
     void Start()
     {
@@ -46,34 +53,56 @@ public class characterDialogue : MonoBehaviour
 
     private void startDialogue(string[] textLines)
     {
-        changePanelText(textLines[currentLine]);
-        if (!timerHasStarted)
+        if (!checkPointReached)
         {
-            dialogueTimer.startTimer();
-            timerHasStarted = true;
-        }
-        if (dialogueTimer.timerHasFinished)
-        {
-            timerHasStarted = false;
-            if (currentLine < textLines.Length - 1)
+            changePanelText(textLines[currentLine]);
+            //Debug.Log(startedWriting);
+/*             if (!startedWriting)
             {
-                currentLine++;
+                Debug.Log(textLines[currentLine]);
+                startedWriting = true; 
+                StopAllCoroutines();
+                StartCoroutine(typeLine(textLines[currentLine]));
+            } */
+            if (!timerHasStarted)
+            {
+                dialogueTimer.startTimer();
+                timerHasStarted = true;
             }
-            else
+            if (dialogueTimer.timerHasFinished)
             {
-                currentLine = 0;
-                initialDialogueStarted = false;
-                triggeredDialogueStarted = false;
-                changePanelText("");
-                dialogueEndedEvent?.Invoke();
-                if(textLines == triggeredTextLines)
+                timerHasStarted = false;
+                if (currentLine < textLines.Length - 1)
                 {
-                    triggerDialogueEndedEvent?.Invoke(); 
+                    currentLine++;
+                    if (textLines[currentLine].Equals("***CHECKPOINT***"))
+                    {
+                        checkPointReached = true;
+                        currentLine++;
+                    }
                 }
-                hasPlayed = true;
-            }
+                else
+                {
+                    currentLine = 0;
+                    initialDialogueStarted = false;
+                    triggeredDialogueStarted = false;
+                    changePanelText("");
+                    dialogueEndedEvent?.Invoke();
+                    if (textLines == triggeredTextLines)
+                    {
+                        triggerDialogueEndedEvent?.Invoke();
+                    }
+                    hasPlayed = true;
+                }
 
+            }
         }
+
+    }
+
+    public void progressCheckPoint()
+    {
+        checkPointReached = false;
     }
 
     public void triggerDialogue(string pDialogue)
@@ -92,6 +121,20 @@ public class characterDialogue : MonoBehaviour
     private void changePanelText(string pNewText)
     {
         panelText.text = pNewText;
+    }
+
+    IEnumerator typeLine(string pLine)
+    {
+        Debug.Log(pLine);
+        panelText.text = ""; 
+        foreach (var c in pLine.ToCharArray())
+        {
+            panelText.text += c;
+            float typeSpeed = dialogueTimer.totalTime/(pLine.ToCharArray().Length);
+            //float typeSpeed = 0.15f;
+            yield return new WaitForSeconds(typeSpeed);
+        }
+        startedWriting = false; 
     }
 
 
