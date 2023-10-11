@@ -38,7 +38,7 @@ public class LevelControl : MonoBehaviour
     public bool checkPlayerPosition(UnityEngine.Vector3 pPosition)
     {
         UnityEngine.Vector3 playerPos = xrOrigin.transform.position;
-        if(playerPos == playerPos)
+        if(playerPos == pPosition)
         {
             return true;
         }

@@ -20,7 +20,7 @@ public class ButtonInteractible : XRSimpleInteractable
 
     [SerializeField] public bool displayNormalText; 
 
-    bool isSelected = false; 
+    bool buttonIsSelected = false; 
 
     void Start()
     {
@@ -42,14 +42,14 @@ public class ButtonInteractible : XRSimpleInteractable
     protected override void OnHoverEntered(HoverEnterEventArgs args)
     {
         base.OnHoverEntered(args);
-        isSelected = false; 
+        buttonIsSelected = false; 
         imageButton.color = highlightedColor; 
     }
 
     protected override void OnHoverExited(HoverExitEventArgs args)
     {
         base.OnHoverExited(args);
-        if(!isSelected)
+        if(!buttonIsSelected)
         {
             imageButton.color = normalColor; 
         }
@@ -61,7 +61,7 @@ public class ButtonInteractible : XRSimpleInteractable
         base.OnSelectEntered(args);
 
 
-        isSelected = true;
+        buttonIsSelected = true;
         imageButton.color = pressedColor;
 
     }
@@ -70,7 +70,7 @@ public class ButtonInteractible : XRSimpleInteractable
     {
         base.OnSelectExited(args);
 
-        isSelected = false;
+        buttonIsSelected = false;
         imageButton.color = pressedColor;
 
     }

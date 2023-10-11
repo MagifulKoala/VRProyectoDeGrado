@@ -14,7 +14,7 @@ public class ObjectControll : SimpleObjectController
     [SerializeField] GameObject explosiveInstance;
     [SerializeField] float fireDamage = 1f;
     [SerializeField] float lifePoints = 3f;
-    [SerializeField] private float radiusOffset = 1f;
+    //[SerializeField] private float radiusOffset = 1f;
     public Rigidbody rb;
 
     public const string fireParticleTag = "fireParticle";
