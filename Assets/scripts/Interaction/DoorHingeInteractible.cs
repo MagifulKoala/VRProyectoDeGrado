@@ -108,7 +108,7 @@ public class DoorHingeInteractible : SimpleHingeInteractible
 
     public override void resetHinge()
     {
-        Debug.Log("RESET HINGE CALLED");
+        //Debug.Log("RESET HINGE CALLED");
 
         if (isClosed)
         {

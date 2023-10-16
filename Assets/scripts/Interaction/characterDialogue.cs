@@ -8,11 +8,15 @@ public class characterDialogue : MonoBehaviour
 {
 
     [Header("Initial dialogue")]
-    [TextArea(3,10)]
+    [TextArea(3, 10)]
     [SerializeField] string[] initialTextLines;
     [Header("trigger dialogue")]
-    [TextArea(3,10)]
+    [TextArea(3, 10)]
     [SerializeField] string[] triggeredTextLines;
+    [Header("Final Dialogue")]
+    [TextArea(3,10)]
+    [SerializeField] string[] finalTextLines; 
+
     [Header("other")]
 
     [Header("dialogue list")]
@@ -20,6 +24,7 @@ public class characterDialogue : MonoBehaviour
     [SerializeField] TMP_Text panelText;
     [SerializeField] public bool initialDialogueStarted = false;
     [SerializeField] public bool triggeredDialogueStarted = false;
+    public bool triggerEndDialogue = false; 
     Timer dialogueTimer;
     int currentLine = 0;
     float textChangeTime = 3f;
@@ -27,9 +32,12 @@ public class characterDialogue : MonoBehaviour
     bool hasPlayed = false;
     bool checkPointReached = false;
     bool startedWriting = false;
+    bool challengeComplete = false;
+    int currentDialogue = 0;
     public UnityEvent dialogueEndedEvent;
     public UnityEvent dialogueStartedEvent;
     public UnityEvent triggerDialogueEndedEvent;
+    public UnityEvent finalDialogueEndedEvent; 
 
 
     void Start()
@@ -48,8 +56,19 @@ public class characterDialogue : MonoBehaviour
         {
             startDialogue(triggeredTextLines);
         }
+        else if(triggerEndDialogue)
+        {
+            startDialogue(finalTextLines);
+        }
 
     }
+
+    public void completeChallenge()
+    {
+        challengeComplete = true; 
+        currentDialogue++; 
+    }
+        
 
     private void startDialogue(string[] textLines)
     {
@@ -57,13 +76,13 @@ public class characterDialogue : MonoBehaviour
         {
             changePanelText(textLines[currentLine]);
             //Debug.Log(startedWriting);
-/*             if (!startedWriting)
-            {
-                Debug.Log(textLines[currentLine]);
-                startedWriting = true; 
-                StopAllCoroutines();
-                StartCoroutine(typeLine(textLines[currentLine]));
-            } */
+            /*             if (!startedWriting)
+                        {
+                            Debug.Log(textLines[currentLine]);
+                            startedWriting = true; 
+                            StopAllCoroutines();
+                            StartCoroutine(typeLine(textLines[currentLine]));
+                        } */
             if (!timerHasStarted)
             {
                 dialogueTimer.startTimer();
@@ -84,10 +103,14 @@ public class characterDialogue : MonoBehaviour
                 else
                 {
                     currentLine = 0;
+
                     initialDialogueStarted = false;
                     triggeredDialogueStarted = false;
+                    triggerEndDialogue = false; 
+
                     changePanelText("");
                     dialogueEndedEvent?.Invoke();
+                    finalDialogueEndedEvent?.Invoke(); 
                     if (textLines == triggeredTextLines)
                     {
                         triggerDialogueEndedEvent?.Invoke();
@@ -107,13 +130,35 @@ public class characterDialogue : MonoBehaviour
 
     public void triggerDialogue(string pDialogue)
     {
-        if (pDialogue.Equals("initial"))
+        //Debug.Log("current dialogue " + currentDialogue);
+
+        switch (currentDialogue)
         {
-            initialDialogueStarted = true;
+            case 0:
+                initialDialogueStarted = true;
+                break;
+            case 1:
+                triggeredDialogueStarted = true;
+                break;
+            case 2:
+                triggerEndDialogue = true; 
+                break;
         }
-        else if (pDialogue.Equals("triggered"))
+
+        currentDialogue++;
+        if(!challengeComplete)
         {
-            triggeredDialogueStarted = true;
+            if(currentDialogue > 1)
+            {
+                currentDialogue = 1;
+            }
+        }
+        else
+        {
+            if(currentDialogue > 2)
+            {
+                currentDialogue = 2; 
+            }
         }
 
     }
@@ -126,15 +171,15 @@ public class characterDialogue : MonoBehaviour
     IEnumerator typeLine(string pLine)
     {
         Debug.Log(pLine);
-        panelText.text = ""; 
+        panelText.text = "";
         foreach (var c in pLine.ToCharArray())
         {
             panelText.text += c;
-            float typeSpeed = dialogueTimer.totalTime/(pLine.ToCharArray().Length);
+            float typeSpeed = dialogueTimer.totalTime / (pLine.ToCharArray().Length);
             //float typeSpeed = 0.15f;
             yield return new WaitForSeconds(typeSpeed);
         }
-        startedWriting = false; 
+        startedWriting = false;
     }
 
 

@@ -32,7 +32,7 @@ public class handGrabAnimation : MonoBehaviour
 
     public void stopHandGrabAnimation()
     {
-        Debug.Log("trigger stop anim");
+        //Debug.Log("trigger stop anim");
         animator.SetBool(grabBool, false);
         handIsGrabbing = false;
     }

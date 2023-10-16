@@ -11,6 +11,7 @@ public class NPCControll : MonoBehaviour
     private const string playerTag = "Player";
     private const string conditionPlayerEntered = "playerEntered";
     private const string conditionDialogueFinished = "dialogueFinished";
+    private const string idle = "idle";
     bool hasPlayed = false;
     public UnityEvent playerFirstDetectedEvent;
     public UnityEvent playerDetectedEvent;
@@ -52,5 +53,10 @@ public class NPCControll : MonoBehaviour
     public void setAnimationOfferKey()
     {
         npcAnimator.SetBool(conditionDialogueFinished, true);
+    }
+
+    public void setAnimationIdle()
+    {
+        npcAnimator.SetBool(idle, true);
     }
 }

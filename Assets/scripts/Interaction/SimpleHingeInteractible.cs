@@ -69,7 +69,7 @@ public abstract class SimpleHingeInteractible : XRSimpleInteractable
 
     public void UnLock()
     {
-        Debug.Log("UnLock simpleHinge Interactible called");
+        //Debug.Log("UnLock simpleHinge Interactible called");
         isLocked = false;
     }
 

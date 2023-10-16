@@ -8,6 +8,9 @@
         },
         {
             "m_Id": "f840e77e95d146389a5113a094c31b63"
+        },
+        {
+            "m_Id": "f746f4c4d1ad4086a1bfc8b6c20ae9c5"
         }
     ],
     "m_Keywords": [],
@@ -479,10 +482,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1561.0,
-            "y": 305.0,
-            "width": 163.0,
-            "height": 34.0
+            "x": -1640.0,
+            "y": 399.199951171875,
+            "width": 163.199951171875,
+            "height": 33.60003662109375
         }
     },
     "m_Slots": [
@@ -515,10 +518,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -914.5626220703125,
-            "y": 339.4374084472656,
+            "x": -904.0,
+            "y": 300.0,
             "width": 208.0,
-            "height": 315.0
+            "height": 312.800048828125
         }
     },
     "m_Slots": [
@@ -1437,10 +1440,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1640.0,
-            "y": 574.0,
-            "width": 153.0,
-            "height": 173.0
+            "x": -1628.0001220703125,
+            "y": 453.60003662109377,
+            "width": 152.800048828125,
+            "height": 172.79998779296876
         }
     },
     "m_Slots": [
@@ -1708,8 +1711,39 @@
         },
         {
             "m_Id": "f840e77e95d146389a5113a094c31b63"
+        },
+        {
+            "m_Id": "f746f4c4d1ad4086a1bfc8b6c20ae9c5"
         }
     ]
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "f746f4c4d1ad4086a1bfc8b6c20ae9c5",
+    "m_Guid": {
+        "m_GuidSerialized": "bdc2ad73-6d85-4c2e-afcc-938bc1411233"
+    },
+    "m_Name": "normal",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "normal",
+    "m_DefaultReferenceName": "_normal",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 0.0,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
 }
 
 {
@@ -1739,6 +1773,6 @@
         "a": 0.0
     },
     "isMainColor": false,
-    "m_ColorMode": 0
+    "m_ColorMode": 1
 }
 
