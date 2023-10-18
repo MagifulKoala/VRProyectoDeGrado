@@ -330,7 +330,7 @@ namespace NHance.Assets.Scripts
                 {
                     _instance.Clean();
                     _instance.Compile();
-                    _instance.Save();
+                    //_instance.Save();
                 }
                 
                 if (GUILayout.Button("Compile"))

@@ -11,7 +11,9 @@ public class Timer : MonoBehaviour
     public bool timerHasFinished = false; 
 
 
+
     public void setTotalTime(float pTime) => totalTime = pTime;
+    public float getTimeLeft() => timeLeft; 
 
     public void startTimer()
     {

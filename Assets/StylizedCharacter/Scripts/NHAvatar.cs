@@ -399,6 +399,8 @@ namespace NHance.Assets.Scripts
             }
         }
 
+
+/* 
         public void Save()
         {
             //chose file path
@@ -417,7 +419,7 @@ namespace NHance.Assets.Scripts
             PrefabUtility.SaveAsPrefabAsset(copy, filePath);
             //destroy on scene
             DestroyImmediate(copy);
-        }
+        } */
 
         public void AutoSocketTargetSetup()
         {

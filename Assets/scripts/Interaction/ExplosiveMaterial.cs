@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ExplosiveMaterial : MonoBehaviour
@@ -14,11 +15,16 @@ public class ExplosiveMaterial : MonoBehaviour
     ObjectControll parentObjectControll;
     SphereCollider sphereCollider;
     Timer timer;
+    TMP_Text explotionTextTime; 
+    AudioSource explosionAudio; 
     bool timerIsOn = false;
     bool particleSystemTriggered = false;
 
     private void Start()
     {
+        explotionTextTime = transform.GetChild(0).GetComponent<TMP_Text>();
+        explosionAudio = GetComponent<AudioSource>();
+        
         sphereCollider = GetComponent<SphereCollider>();
         timer = GetComponent<Timer>();
         if (transform.parent != null)
@@ -41,7 +47,10 @@ public class ExplosiveMaterial : MonoBehaviour
             {
                 timer.startTimer();
                 timerIsOn = true;
+                explotionTextTime.gameObject.SetActive(true);
             }
+
+            explotionTextTime.text = timer.getTimeLeft().ToString("F2"); 
 
             if (timer.timerHasFinished)
             {
@@ -51,13 +60,14 @@ public class ExplosiveMaterial : MonoBehaviour
                 if (!particleSystemTriggered)
                 {
                     startParticleSystem(explosiveParticleSystem);
+                    explosionAudio.Play(); 
                 }
 
                 if (sphereCollider.radius >= finalExplosionSize)
                 {
                     //Debug.Log("final radius is:" + sphereCollider.radius);
                     explosionTriggered = false;
-                    Destroy(transform.parent.gameObject, 0.5f);
+                    Destroy(transform.parent.gameObject, 0.7f);
                 }
 
             }
