@@ -9983,7 +9983,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 5966929726247457085, guid: faaf24ef4e06011488f8224b92057bfd, type: 3}
           m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
           m_MethodName: SceneLoader
           m_Mode: 3
