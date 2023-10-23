@@ -19,7 +19,7 @@ public class handGrabAnimation : MonoBehaviour
 
     public void startGrabHandAnimation()
     {
-        if (!handIsGrabbing)
+        if (!handIsGrabbing && animator != null)
         {
             //Debug.Log("triggerhandANim");
             //Debug.Log("animator:" + animator is null);
@@ -32,18 +32,27 @@ public class handGrabAnimation : MonoBehaviour
 
     public void stopHandGrabAnimation()
     {
-        //Debug.Log("trigger stop anim");
-        animator.SetBool(grabBool, false);
-        handIsGrabbing = false;
+        if (animator != null)
+        {
+            //Debug.Log("trigger stop anim");
+            animator.SetBool(grabBool, false);
+            handIsGrabbing = false;
+        }
     }
 
     public void startPointAnimation()
     {
-        animator.SetBool(pointBool, true);
+        if (animator != null)
+        {
+            animator.SetBool(pointBool, true);
+        }
     }
 
     public void stopPointAnimtion()
     {
-        animator.SetBool(pointBool, false);
+        if (animator != null)
+        {
+            animator.SetBool(pointBool, false);
+        }
     }
 }
