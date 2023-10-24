@@ -97,7 +97,7 @@ public class ObjectControll : SimpleObjectController
             }
             if (materialCtrl.explosive)
             {
-                Debug.Log("explosive recognized");
+                //Debug.Log("explosive recognized");
                 explosionInitiated = true;
                 ExplosionTriggered?.Invoke();
             }
@@ -107,7 +107,7 @@ public class ObjectControll : SimpleObjectController
             ExplosiveMaterial explosiveMaterial = other.gameObject.GetComponent<ExplosiveMaterial>();
             if (explosiveMaterial.explosionInProgress)
             {
-                Debug.Log("explosionInProgress recognized");
+                //Debug.Log("explosionInProgress recognized");
                 float explosionPower = explosiveMaterial.explosivePower;
                 applyExplotion(explosionPower);
             }

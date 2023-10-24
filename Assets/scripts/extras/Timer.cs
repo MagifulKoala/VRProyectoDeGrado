@@ -31,6 +31,7 @@ public class Timer : MonoBehaviour
             if(timeLeft <= 0)
             {
                 isOn = false;
+                timeLeft = 0;
                 timerHasFinished = true; 
             }
         }
