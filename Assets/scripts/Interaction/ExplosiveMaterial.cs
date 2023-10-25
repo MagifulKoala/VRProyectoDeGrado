@@ -15,16 +15,17 @@ public class ExplosiveMaterial : MonoBehaviour
     ObjectControll parentObjectControll;
     SphereCollider sphereCollider;
     Timer timer;
-    TMP_Text explotionTextTime; 
-    AudioSource explosionAudio; 
+    TMP_Text explotionTextTime;
+    AudioSource explosionAudio;
     bool timerIsOn = false;
     bool particleSystemTriggered = false;
+    bool explosionUnparented = false;
 
     private void Start()
     {
         explotionTextTime = transform.GetChild(0).GetComponent<TMP_Text>();
         explosionAudio = GetComponent<AudioSource>();
-        
+
         sphereCollider = GetComponent<SphereCollider>();
         timer = GetComponent<Timer>();
         if (transform.parent != null)
@@ -50,24 +51,33 @@ public class ExplosiveMaterial : MonoBehaviour
                 explotionTextTime.gameObject.SetActive(true);
             }
 
-            explotionTextTime.text = timer.getTimeLeft().ToString("F2"); 
+            if (!timer.timerHasFinished)
+            {
+                explotionTextTime.text = timer.getTimeLeft().ToString("F1");
+            }
 
             if (timer.timerHasFinished)
             {
+
                 //Debug.Log("BOOOM");
                 explosionInProgress = true;
+                explotionTextTime.text = "";
+                if (!explosionUnparented)
+                {
+                    unParentExplosion();
+                }
+                //Debug.Log(sphereCollider + " current radius " + sphereCollider.radius);
                 sphereCollider.radius += explosionExpansionRate;
                 if (!particleSystemTriggered)
                 {
                     startParticleSystem(explosiveParticleSystem);
-                    explosionAudio.Play(); 
+                    explosionAudio.Play();
                 }
-
                 if (sphereCollider.radius >= finalExplosionSize)
                 {
                     //Debug.Log("final radius is:" + sphereCollider.radius);
                     explosionTriggered = false;
-                    Destroy(transform.parent.gameObject, 0.7f);
+                    Destroy(transform.gameObject, 1.963f);
                 }
 
             }
@@ -81,6 +91,14 @@ public class ExplosiveMaterial : MonoBehaviour
         ParticleSystem ps = GetComponentInChildren<ParticleSystem>();
         ps.Play();
         particleSystemTriggered = true;
+    }
+
+    private void unParentExplosion()
+    {
+        GameObject oldParent = transform.parent.gameObject;
+        gameObject.transform.parent = null;
+        Destroy(oldParent);
+        explosionUnparented = true;
     }
 
     private void generateExplosion() => explosionTriggered = true;

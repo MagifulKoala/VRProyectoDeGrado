@@ -9,6 +9,7 @@ public class LevelControl : MonoBehaviour
 {
     [SerializeField] Transform spawnPoint;
     [SerializeField] GameObject xrOrigin;
+    [SerializeField] Camera xrOriginCamera; 
     [SerializeField] ContinuousMoveProviderBase continuousMoveProvider; 
     [SerializeField] bool resetXROrigin; 
 
@@ -24,6 +25,7 @@ public class LevelControl : MonoBehaviour
         {
         xrOrigin.transform.position = spawnPoint.position;
         xrOrigin.transform.localEulerAngles = spawnPoint.localEulerAngles;
+        xrOriginCamera.transform.localEulerAngles = spawnPoint.localEulerAngles; 
         }
     }
 

@@ -8,34 +8,37 @@ public class XRHandPhysics : MonoBehaviour
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();    
+        rb = GetComponent<Rigidbody>();
         handCollider = GetComponentInChildren<SphereCollider>();
     }
 
     public void toggleHandCollider(bool pState)
     {
-        handCollider.enabled = pState; 
+        if (handCollider != null)
+        {
+            handCollider.enabled = pState;
+        }
     }
 
     public void enabledHandCollider()
     {
-        toggleHandCollider(true); 
+        toggleHandCollider(true);
     }
 
     public void toggleHandColliderDelay(float pDelay)
     {
-        Invoke("enabledHandCollider", pDelay); 
+        Invoke("enabledHandCollider", pDelay);
     }
 
     private void FixedUpdate()
     {
-        rb.velocity = (followTarget.position - transform.position)/Time.fixedDeltaTime; 
+        rb.velocity = (followTarget.position - transform.position) / Time.fixedDeltaTime;
         //Debug.Log("follow target:" + followTarget.position + " currentPos: " + transform.position + "vel: " + rb.velocity);
 
         UnityEngine.Quaternion rotationDifference = followTarget.rotation * UnityEngine.Quaternion.Inverse(transform.rotation);
         rotationDifference.ToAngleAxis(out float angleInDegree, out UnityEngine.Vector3 rotationAxis);
 
-        UnityEngine.Vector3 rotationDifferenceDegree = angleInDegree * rotationAxis; 
+        UnityEngine.Vector3 rotationDifferenceDegree = angleInDegree * rotationAxis;
 
         rb.angularVelocity = (rotationDifferenceDegree * Mathf.Deg2Rad / Time.fixedDeltaTime);
     }
