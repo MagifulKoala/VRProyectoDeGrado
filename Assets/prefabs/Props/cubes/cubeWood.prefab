@@ -163,7 +163,7 @@ MonoBehaviour:
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
   explosiveInstance: {fileID: 0}
   fireDamage: 1
-  lifePoints: 9999
+  lifePoints: 5
   rb: {fileID: 0}
   particleSystemOn: 0
   isOnfire: 0
