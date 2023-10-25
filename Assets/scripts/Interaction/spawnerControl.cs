@@ -42,10 +42,10 @@ public class spawnerControl : MonoBehaviour
 
     public void deleteChildren()
     {
-        Debug.Log("current count: " + currentCount + " last obj " + lastInstanceSpawned.gameObject.name);
+        //Debug.Log("current count: " + currentCount + " last obj " + lastInstanceSpawned.gameObject.name);
         foreach (Transform child in transform)
         {
-            Debug.Log("child: " + child.gameObject + " *** lastInstance: " + lastInstanceSpawned.gameObject);
+            //Debug.Log("child: " + child.gameObject + " *** lastInstance: " + lastInstanceSpawned.gameObject);
             if (child.gameObject != lastInstanceSpawned.gameObject)
             {
                 Destroy(child.gameObject);
