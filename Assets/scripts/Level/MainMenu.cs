@@ -8,12 +8,17 @@ public class MainMenu : MonoBehaviour
 
     public void JugarTutorial()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("basicTutorial");
     }
 
     public void Jugar()
     {
         SceneManager.LoadScene("tutorialLevel");
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
 

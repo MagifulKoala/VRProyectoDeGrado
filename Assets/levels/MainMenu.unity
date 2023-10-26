@@ -4312,7 +4312,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -87.01752, y: 62.999992}
+  m_AnchoredPosition: {x: -87.01752, y: 263}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &598865352
@@ -4335,7 +4335,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: JUGAR
+  m_text: '
+
+
+    JUGAR'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6fa1094237550a6418ade4e4d5820edd, type: 2}
   m_sharedMaterial: {fileID: 3253470860625978639, guid: 6fa1094237550a6418ade4e4d5820edd, type: 2}
@@ -5343,7 +5346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6350,7 +6353,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 1.1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &786733164
@@ -7945,7 +7948,7 @@ MonoBehaviour:
   m_OriginBaseGameObject: {fileID: 1012193498}
   m_CameraFloorOffsetObject: {fileID: 609170771}
   m_RequestedTrackingOriginMode: 0
-  m_CameraYOffset: 1.1176
+  m_CameraYOffset: 1.79
 --- !u!4 &1012193503
 Transform:
   m_ObjectHideFlags: 0
@@ -8442,8 +8445,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -87.01752, y: 62.999992}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -87.01752, y: 263}
+  m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1130469736
 MonoBehaviour:
@@ -8465,7 +8468,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TUTORIAL
+  m_text: '
+
+
+    TUTORIAL'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6fa1094237550a6418ade4e4d5820edd, type: 2}
   m_sharedMaterial: {fileID: 3253470860625978639, guid: 6fa1094237550a6418ade4e4d5820edd, type: 2}
@@ -10401,7 +10407,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1415462019}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 5.2}
+  m_LocalPosition: {x: 0, y: 0, z: 5.19}
   m_LocalScale: {x: 0.0026, y: 0.02, z: 0.03}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12895,7 +12901,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.821, y: 2.63}
+  m_AnchoredPosition: {x: -2.821, y: 4.81}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1690628607
@@ -13629,10 +13635,10 @@ MonoBehaviour:
   m_PositionInput:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: Position Input
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: 6c32ac9a-6676-44ca-85fe-47aa73151a27
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -13641,10 +13647,10 @@ MonoBehaviour:
   m_RotationInput:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: Rotation Input
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: daee0061-17f1-4d9a-82c6-c7b318f42e7b
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
