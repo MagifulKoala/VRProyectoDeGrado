@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ExplosiveMaterial : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class ExplosiveMaterial : MonoBehaviour
     bool timerIsOn = false;
     bool particleSystemTriggered = false;
     bool explosionUnparented = false;
+
+    public UnityEvent ObjectDestroyed; 
 
     private void Start()
     {
@@ -77,6 +80,7 @@ public class ExplosiveMaterial : MonoBehaviour
                 {
                     //Debug.Log("final radius is:" + sphereCollider.radius);
                     explosionTriggered = false;
+                    ObjectDestroyed?.Invoke(); 
                     Destroy(transform.gameObject, 1.963f);
                 }
 

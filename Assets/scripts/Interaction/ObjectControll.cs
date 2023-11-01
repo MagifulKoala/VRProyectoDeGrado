@@ -26,6 +26,13 @@ public class ObjectControll : SimpleObjectController
     public bool explosionInitiated = false;
 
     public UnityEvent ExplosionTriggered;
+    public UnityEvent ObjectDestroyed; 
+    public UnityEvent objectOnFire;
+    public UnityEvent objectMelting; 
+
+
+    public bool getIsOnFire => isOnfire; 
+    public bool getIsMelting => isMelting; 
 
 
     protected override void Start()
@@ -50,6 +57,7 @@ public class ObjectControll : SimpleObjectController
             if (onFireParticleSystem != null && !particleSystemOn)
             {
                 startParticleSystem(onFireParticleSystem);
+                objectOnFire?.Invoke(); 
             }
             recieveDamage(fireDamage * Time.deltaTime);
         }
@@ -58,6 +66,7 @@ public class ObjectControll : SimpleObjectController
             if (meltingParticleSystem != null! && !particleSystemOn)
             {
                 startParticleSystem(meltingParticleSystem);
+                objectMelting?.Invoke(); 
             }
             recieveDamage(fireDamage * Time.deltaTime);
         }
@@ -131,6 +140,7 @@ public class ObjectControll : SimpleObjectController
         lifePoints -= damageAmount;
         if (lifePoints <= 0)
         {
+            ObjectDestroyed?.Invoke(); 
             Destroy(gameObject, 1);
         }
     }
