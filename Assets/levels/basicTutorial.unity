@@ -5678,6 +5678,15 @@ MonoBehaviour:
   ExplosionTriggered:
     m_PersistentCalls:
       m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &385975993
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9821,7 +9830,7 @@ GameObject:
   - component: {fileID: 627255691}
   m_Layer: 0
   m_Name: Left Direct Interactor
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19686,6 +19695,15 @@ MonoBehaviour:
   ExplosionTriggered:
     m_PersistentCalls:
       m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!54 &1233223216
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20023,6 +20041,15 @@ MonoBehaviour:
   isMelting: 0
   explosionInitiated: 0
   ExplosionTriggered:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
     m_PersistentCalls:
       m_Calls: []
 --- !u!54 &1240798905
@@ -27403,6 +27430,15 @@ MonoBehaviour:
   ExplosionTriggered:
     m_PersistentCalls:
       m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!54 &1732195819
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27800,7 +27836,7 @@ GameObject:
   - component: {fileID: 1755757437}
   m_Layer: 0
   m_Name: Right Direct Interactor
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66636,6 +66672,15 @@ MonoBehaviour:
   ExplosionTriggered:
     m_PersistentCalls:
       m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5459867217523527501
 GameObject:
   m_ObjectHideFlags: 0
@@ -69863,6 +69908,15 @@ MonoBehaviour:
   ExplosionTriggered:
     m_PersistentCalls:
       m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!222 &6960744972580208404
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -71288,6 +71342,15 @@ MonoBehaviour:
   isMelting: 0
   explosionInitiated: 0
   ExplosionTriggered:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &7554487531735891373
