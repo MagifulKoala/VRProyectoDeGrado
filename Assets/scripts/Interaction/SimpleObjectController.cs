@@ -9,6 +9,8 @@ public class SimpleObjectController : MonoBehaviour
     [SerializeField] public bool initializeMaterialInChildren;
     [SerializeField] bool dontInitializeMaterial = false;
 
+    public WristMenu menu;
+
     MeshRenderer objectMeshRenderer;
     SkinnedMeshRenderer skinnedMeshRenderer;
     public materialController materialCtrl;
@@ -91,6 +93,7 @@ public class SimpleObjectController : MonoBehaviour
                     {
                         objectMeshRenderer.materials =
                         initializeVisualMaterialList(objectMeshRenderer.materials, materialControl.materialVisualMaterial);
+                        menu.cambiarMateria(pNewMaterial.name);
                     }
                     else
                     {
