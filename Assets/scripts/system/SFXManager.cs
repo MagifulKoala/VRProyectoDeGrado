@@ -98,7 +98,10 @@ public class SFXManager : MonoBehaviour
 
     private void playGrabSound(AudioClip pAudioClip)
     {
-        playerGrabAudioSource.clip = pAudioClip;
-        playerGrabAudioSource.Play();
+        if (playerGrabAudioSource != null)
+        {
+            playerGrabAudioSource.clip = pAudioClip;
+            playerGrabAudioSource.Play();
+        }
     }
 }
