@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2778647090498420274}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.17399931, y: -1.2194996, z: 0.0030000247}
+  m_LocalPosition: {x: -0.13999987, y: -1.2194996, z: 0.0025997162}
   m_LocalScale: {x: 0.076063074, y: 1, z: 0.85789275}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -207,8 +207,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3292d235c6a3f5b47bd6caee3c83d29f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorOpen: 0
-  doorClosed: 0
   bigDoorAnimator: {fileID: 0}
 --- !u!1 &7105297382999322698
 GameObject:
@@ -238,7 +236,7 @@ Transform:
   m_GameObject: {fileID: 7105297382999322698}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.174, y: -0.35999966, z: 0.003}
+  m_LocalPosition: {x: -0.13999987, y: -0.35999966, z: 0.0025997162}
   m_LocalScale: {x: 0.076063074, y: 1, z: 0.85789275}
   m_ConstrainProportionsScale: 0
   m_Children: []

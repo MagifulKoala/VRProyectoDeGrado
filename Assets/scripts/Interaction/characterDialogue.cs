@@ -31,7 +31,7 @@ public class characterDialogue : MonoBehaviour
     bool timerHasStarted = false;
     bool hasPlayed = false;
     bool checkPointReached = false;
-    //bool startedWriting = false;
+    bool startedWriting = false;
     bool challengeComplete = false;
     int currentDialogue = 0;
     public UnityEvent dialogueEndedEvent;
@@ -179,7 +179,7 @@ public class characterDialogue : MonoBehaviour
             //float typeSpeed = 0.15f;
             yield return new WaitForSeconds(typeSpeed);
         }
-        //startedWriting = false;
+        startedWriting = false;
     }
 
 
