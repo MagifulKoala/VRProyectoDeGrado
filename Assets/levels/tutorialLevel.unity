@@ -69537,7 +69537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4134b1dbb03d8e94d8c4478d6d87e470, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 751847886}
+  spawnPoint: {fileID: 4159273527520438078}
   xrOrigin: {fileID: 5769661369761418226}
   xrOriginCamera: {fileID: 4725692746770259177}
   continuousMoveProvider: {fileID: 1082486163}

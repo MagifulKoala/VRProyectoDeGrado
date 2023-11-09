@@ -118,7 +118,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8300978336201585025}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 0.1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -171,6 +171,15 @@ MonoBehaviour:
   isMelting: 0
   explosionInitiated: 0
   ExplosionTriggered:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &1014291810651370431
