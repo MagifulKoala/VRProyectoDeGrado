@@ -72,3 +72,4 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 Assets/LowPolyDungeonsLite/LowPolyDungeonsLite_2020.3.0_HDRP_v1.1.unitypackage.meta
 Assets/LowPolyDungeonsLite/LowPolyDungeonsLite_2020.3.0_URP_v1.1.unitypackage.meta
+Assets/XR/Settings/OpenXR Package Settings.asset
