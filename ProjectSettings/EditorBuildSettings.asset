@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/levels/basicTutorial.unity
     guid: 11b57673f8401924586ecea3ef29e677
+  - enabled: 1
+    path: Assets/levels/explosionLevel.unity
+    guid: 1cb52898994d390419c4cb44f2659e59
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: cfe2ca639eec47e4f9ac315979b4f9f7, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 9e9da7b16872c99498a09a7b230e3302, type: 2}

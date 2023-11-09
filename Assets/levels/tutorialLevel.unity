@@ -10899,6 +10899,15 @@ MonoBehaviour:
   ExplosionTriggered:
     m_PersistentCalls:
       m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!54 &499312945
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11236,6 +11245,15 @@ MonoBehaviour:
   isMelting: 0
   explosionInitiated: 0
   ExplosionTriggered:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
     m_PersistentCalls:
       m_Calls: []
 --- !u!54 &499434440
@@ -13218,6 +13236,15 @@ MonoBehaviour:
   ExplosionTriggered:
     m_PersistentCalls:
       m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!54 &639882450
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14007,7 +14034,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &705606159
 Transform:
   m_ObjectHideFlags: 0
@@ -15061,6 +15088,15 @@ MonoBehaviour:
   isMelting: 0
   explosionInitiated: 0
   ExplosionTriggered:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
     m_PersistentCalls:
       m_Calls: []
 --- !u!54 &796545114
@@ -17368,6 +17404,15 @@ MonoBehaviour:
   isMelting: 0
   explosionInitiated: 0
   ExplosionTriggered:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
     m_PersistentCalls:
       m_Calls: []
 --- !u!54 &985078244
@@ -20695,6 +20740,15 @@ MonoBehaviour:
   ExplosionTriggered:
     m_PersistentCalls:
       m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!54 &1197212120
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21106,6 +21160,15 @@ MonoBehaviour:
   isMelting: 0
   explosionInitiated: 0
   ExplosionTriggered:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
     m_PersistentCalls:
       m_Calls: []
 --- !u!54 &1202849284
@@ -23723,6 +23786,15 @@ MonoBehaviour:
   ExplosionTriggered:
     m_PersistentCalls:
       m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!54 &1382432247
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23927,7 +23999,7 @@ Transform:
   m_GameObject: {fileID: 1391765720}
   serializedVersion: 2
   m_LocalRotation: {x: 0.9063079, y: 0, z: 0, w: 0.42261827}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.024, z: 0.036}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24551,6 +24623,15 @@ MonoBehaviour:
   isMelting: 0
   explosionInitiated: 0
   ExplosionTriggered:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
     m_PersistentCalls:
       m_Calls: []
 --- !u!54 &1422259449
@@ -26525,6 +26606,15 @@ MonoBehaviour:
   isMelting: 0
   explosionInitiated: 0
   ExplosionTriggered:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
     m_PersistentCalls:
       m_Calls: []
 --- !u!54 &1562817211
@@ -29557,6 +29647,15 @@ MonoBehaviour:
   isMelting: 0
   explosionInitiated: 0
   ExplosionTriggered:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
     m_PersistentCalls:
       m_Calls: []
 --- !u!54 &1735522290
@@ -33249,6 +33348,15 @@ MonoBehaviour:
   ExplosionTriggered:
     m_PersistentCalls:
       m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!54 &1972251349
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -35995,6 +36103,15 @@ MonoBehaviour:
   ExplosionTriggered:
     m_PersistentCalls:
       m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!54 &2131705760
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37659,6 +37776,15 @@ MonoBehaviour:
   isMelting: 0
   explosionInitiated: 0
   ExplosionTriggered:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
     m_PersistentCalls:
       m_Calls: []
 --- !u!54 &572489067030483812
@@ -63953,6 +64079,15 @@ MonoBehaviour:
   ExplosionTriggered:
     m_PersistentCalls:
       m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &4445548564976956803
 Transform:
   m_ObjectHideFlags: 0
@@ -64282,6 +64417,15 @@ MonoBehaviour:
   isMelting: 0
   explosionInitiated: 0
   ExplosionTriggered:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
     m_PersistentCalls:
       m_Calls: []
 --- !u!95 &4703364721367968153
@@ -65693,6 +65837,15 @@ MonoBehaviour:
   isMelting: 0
   explosionInitiated: 0
   ExplosionTriggered:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &5645525962790333829
@@ -67454,6 +67607,15 @@ MonoBehaviour:
   ExplosionTriggered:
     m_PersistentCalls:
       m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &6753663605638704498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68643,6 +68805,15 @@ MonoBehaviour:
   isMelting: 0
   explosionInitiated: 0
   ExplosionTriggered:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &7375679525151296387
@@ -72146,6 +72317,15 @@ MonoBehaviour:
   isMelting: 0
   explosionInitiated: 0
   ExplosionTriggered:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
     m_PersistentCalls:
       m_Calls: []
 --- !u!4 &9175674729129424906
