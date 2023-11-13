@@ -1038,6 +1038,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -2321,6 +2322,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -2755,6 +2757,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -3105,6 +3108,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -3832,6 +3836,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -4538,6 +4543,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -4971,6 +4977,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -5672,6 +5679,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -6405,6 +6413,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -6755,6 +6764,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -7209,6 +7219,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -7559,6 +7570,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -8205,6 +8217,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -8663,6 +8676,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -9249,6 +9263,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -9599,6 +9614,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -10184,6 +10200,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -10865,6 +10882,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -11846,6 +11864,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -12190,6 +12209,7 @@ MonoBehaviour:
   materials: []
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 8885775190065668171, guid: 7457140b6c01e9542b777e57a6de2786, type: 3}
   meltingParticleSystem: {fileID: 0}
   onFireParticleSystem: {fileID: 0}
@@ -18099,6 +18119,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -18511,6 +18532,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -18979,6 +19001,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -19614,7 +19637,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &705606159
 Transform:
   m_ObjectHideFlags: 0
@@ -20694,6 +20717,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -26022,6 +26046,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -27272,6 +27297,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -27799,6 +27825,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -28288,6 +28315,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -28763,6 +28791,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -29145,6 +29174,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -30358,6 +30388,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -30973,6 +31004,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -31442,6 +31474,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -31792,6 +31825,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -33545,6 +33579,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -34538,6 +34573,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -35028,6 +35064,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -35378,6 +35415,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -35916,6 +35954,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -36371,6 +36410,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -37078,6 +37118,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: bec70a6ea8b9aad47b6f5f5d244e5209, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 0
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 0}
   onFireParticleSystem: {fileID: 0}
@@ -37688,6 +37729,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -38186,6 +38228,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -38536,6 +38579,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -39133,6 +39177,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -39636,6 +39681,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -40770,6 +40816,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -41143,6 +41190,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -42163,6 +42211,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -47496,6 +47545,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -48013,6 +48063,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -48363,6 +48414,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -48796,6 +48848,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -49314,6 +49367,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -50138,6 +50192,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -50798,6 +50853,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -51266,6 +51322,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -51750,6 +51807,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -52263,6 +52321,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -52613,6 +52672,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -52963,6 +53023,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -53418,6 +53479,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 1
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
@@ -65759,7 +65821,7 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 1.79
+  m_Height: 1.7
   m_Radius: 0.38
   m_SlopeLimit: 45
   m_StepOffset: 0.3
@@ -72845,6 +72907,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 0
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
 --- !u!114 &2499447787433683888
 MonoBehaviour:
@@ -74617,6 +74680,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 0
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
 --- !u!4 &2863252233819347695
 Transform:
@@ -80071,6 +80135,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 0
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
 --- !u!114 &4457677653467945260
 MonoBehaviour:
@@ -82356,6 +82421,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 0
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
 --- !u!1 &4998369806554777490
 GameObject:
@@ -86848,6 +86914,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 0
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
 --- !u!4 &6462342371043902434
 Transform:
@@ -87623,6 +87690,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 0
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
 --- !u!114 &6732739908431538634
 MonoBehaviour:
@@ -89603,6 +89671,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 0
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
 --- !u!1 &7267356667713123646
 GameObject:
@@ -91008,7 +91077,7 @@ MonoBehaviour:
   m_OriginBaseGameObject: {fileID: 3674398464714976266}
   m_CameraFloorOffsetObject: {fileID: 334991172343976059}
   m_RequestedTrackingOriginMode: 1
-  m_CameraYOffset: 1.1176
+  m_CameraYOffset: 1.7
 --- !u!114 &7685657934134660872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91580,6 +91649,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 0
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
 --- !u!1 &7799655507222465883
 GameObject:
@@ -91776,6 +91846,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 0
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
 --- !u!1 &7898747187220648621
 GameObject:
@@ -91951,6 +92022,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 0
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
 --- !u!114 &7987582091964757019
 MonoBehaviour:
@@ -98796,6 +98868,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 0
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
 --- !u!4 &8615481189546605673
 Transform:
@@ -99521,6 +99594,7 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 0
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
 --- !u!1 &8836800276073341919
 GameObject:
