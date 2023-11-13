@@ -75,7 +75,11 @@ public class ObjectControll : SimpleObjectController
 
     private void startParticleSystem(GameObject pParticleSystem)
     {
-        GameObject particleObject = Instantiate(pParticleSystem, transform.position, transform.rotation, transform);
+        UnityEngine.Vector3 objectSize = transform.GetComponent<Renderer>().bounds.size;
+        UnityEngine.Vector3 spawnPoint = transform.position;
+        spawnPoint.y += objectSize.y/2; 
+        GameObject particleObject = Instantiate(pParticleSystem, spawnPoint , transform.rotation, transform);
+        particleObject.transform.localScale = transform.localScale; 
         if (pParticleSystem == onFireParticleSystem)
         {
             //particleObject.GetComponent<SphereCollider>().radius += radiusOffset; //adjust collider specific to the onFire
