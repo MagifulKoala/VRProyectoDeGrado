@@ -1,9 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.PlayerLoop;
+using UnityEngine.Rendering.Universal;
 
 [RequireComponent(typeof(Rigidbody))]
 public class ObjectControll : SimpleObjectController
@@ -15,6 +17,7 @@ public class ObjectControll : SimpleObjectController
     [SerializeField] float fireDamage = 1f;
     [SerializeField] float lifePoints = 3f;
     //[SerializeField] private float radiusOffset = 1f;
+    [SerializeField] private List<GameObject> collidingObjects = new List<GameObject>();
     public Rigidbody rb;
 
     public const string fireParticleTag = "fireParticle";
@@ -26,13 +29,13 @@ public class ObjectControll : SimpleObjectController
     public bool explosionInitiated = false;
 
     public UnityEvent ExplosionTriggered;
-    public UnityEvent ObjectDestroyed; 
+    public UnityEvent ObjectDestroyed;
     public UnityEvent objectOnFire;
-    public UnityEvent objectMelting; 
+    public UnityEvent objectMelting;
 
 
-    public bool getIsOnFire => isOnfire; 
-    public bool getIsMelting => isMelting; 
+    public bool getIsOnFire => isOnfire;
+    public bool getIsMelting => isMelting;
 
 
     protected override void Start()
@@ -57,7 +60,7 @@ public class ObjectControll : SimpleObjectController
             if (onFireParticleSystem != null && !particleSystemOn)
             {
                 startParticleSystem(onFireParticleSystem);
-                objectOnFire?.Invoke(); 
+                objectOnFire?.Invoke();
             }
             recieveDamage(fireDamage * Time.deltaTime);
         }
@@ -66,7 +69,7 @@ public class ObjectControll : SimpleObjectController
             if (meltingParticleSystem != null! && !particleSystemOn)
             {
                 startParticleSystem(meltingParticleSystem);
-                objectMelting?.Invoke(); 
+                objectMelting?.Invoke();
             }
             recieveDamage(fireDamage * Time.deltaTime);
         }
@@ -77,14 +80,28 @@ public class ObjectControll : SimpleObjectController
     {
         UnityEngine.Vector3 objectSize = transform.GetComponent<Renderer>().bounds.size;
         UnityEngine.Vector3 spawnPoint = transform.position;
-        spawnPoint.y += objectSize.y/2; 
-        GameObject particleObject = Instantiate(pParticleSystem, spawnPoint , transform.rotation, transform);
-        particleObject.transform.localScale = transform.localScale; 
+
+        spawnPoint.y += objectSize.y / 2;
+        GameObject particleObject = Instantiate(pParticleSystem, spawnPoint, transform.rotation, transform);
+        //GameObject particleObject = Instantiate(pParticleSystem, transform.position , transform.rotation, transform);
+        particleObject.transform.localScale = transform.localScale;
+
+
+
+
         if (pParticleSystem == onFireParticleSystem)
         {
-            //particleObject.GetComponent<SphereCollider>().radius += radiusOffset; //adjust collider specific to the onFire
+            //adjust flame radius
+            particleObject.GetComponent<SphereCollider>().radius = particleObject.GetComponent<SphereCollider>().radius
+            * (1 / (transform.localScale.magnitude / Mathf.Sqrt(3))) * 1.25f;
+
         }
         ParticleSystem ps = GetComponentInChildren<ParticleSystem>();
+        /*     //emmission shape 
+            var sh = ps.shape;
+            sh.shapeType = ParticleSystemShapeType.Mesh;
+            sh.mesh = GetComponent<MeshFilter>().mesh; 
+            // */
         ps.Play();
         particleSystemOn = true;
     }
@@ -98,6 +115,9 @@ public class ObjectControll : SimpleObjectController
     private void OnTriggerEnter(Collider other)
     {
         //Debug.Log("trigger enters ObjectControll + " + other.gameObject);
+        Debug.Log(other.gameObject);
+        collidingObjects.Add(other.gameObject);
+
         if (other.gameObject.tag == fireParticleTag)
         {
             if (materialCtrl.isFlammable)
@@ -144,8 +164,31 @@ public class ObjectControll : SimpleObjectController
         lifePoints -= damageAmount;
         if (lifePoints <= 0)
         {
-            ObjectDestroyed?.Invoke(); 
+            if (isMelting)
+            {
+                putOutFires();
+            }
+            ObjectDestroyed?.Invoke();
             Destroy(gameObject, 1);
+        }
+    }
+
+    private void putOutFires()
+    {
+        foreach (var obj in collidingObjects)
+        {
+            GameObject parent = obj.transform.parent.gameObject;
+            ObjectControll parentObjControl = parent.GetComponent<ObjectControll>(); 
+            if(parentObjControl != null)
+            {
+                if(parentObjControl.isOnfire)
+                {
+                    parentObjControl.isOnfire = false; 
+                    parentObjControl.particleSystemOn = false; 
+                }
+            }
+            Destroy(obj,1.001f); 
+
         }
     }
 
@@ -157,4 +200,39 @@ public class ObjectControll : SimpleObjectController
             Instantiate(explosiveInstance, transform.position, transform.rotation, transform);
         }
     }
+
+/*     private void OnCollisionEnter(Collision other)
+    {
+        collidingObjects.Add(other.gameObject);
+    }
+
+    private void OnCollisionExit(Collision other)
+    {
+        foreach (var obj in collidingObjects)
+        {
+            if (obj.gameObject == other.gameObject)
+            {
+                collidingObjects.Remove(obj);
+            }
+        }
+    } */
+
+    private void OnTriggerExit(Collider other)
+    {
+        GameObject objToRemove = null;
+        foreach (var obj in collidingObjects)
+        {
+            if (obj == other.gameObject)
+            {
+                objToRemove = obj;
+                break;
+            }
+        }
+        if(objToRemove != null)
+        {
+            collidingObjects.Remove(objToRemove);
+        }
+    }
+
+
 }
