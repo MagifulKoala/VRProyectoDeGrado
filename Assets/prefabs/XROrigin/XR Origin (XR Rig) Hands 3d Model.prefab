@@ -471,8 +471,17 @@ LineRenderer:
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1497,8 +1506,17 @@ LineRenderer:
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1867,6 +1885,8 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 246630b291c08da4e82c642c3faa0c1a, type: 3}
   - {fileID: 2095905020852077598, guid: 7457140b6c01e9542b777e57a6de2786, type: 3}
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
+  initializeMaterialInChildren: 0
+  dontInitializeMaterial: 0
   materialCtrl: {fileID: 0}
 --- !u!1 &2415276459871939157
 GameObject:
@@ -2371,8 +2391,17 @@ LineRenderer:
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -2842,6 +2871,8 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: 246630b291c08da4e82c642c3faa0c1a, type: 3}
   - {fileID: 2095905020852077598, guid: 7457140b6c01e9542b777e57a6de2786, type: 3}
   - {fileID: 2095905020852077598, guid: 4ad62d05d063f544688fec31c2e5ebcf, type: 3}
+  initializeMaterialInChildren: 0
+  dontInitializeMaterial: 0
   materialCtrl: {fileID: 0}
 --- !u!1 &3307680123041459213
 GameObject:
@@ -4148,8 +4179,17 @@ LineRenderer:
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4

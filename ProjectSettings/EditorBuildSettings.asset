@@ -18,11 +18,8 @@ EditorBuildSettings:
     path: Assets/levels/testLevel.unity
     guid: c50cad1b279e5c142a2ead723cba6b4f
   - enabled: 1
-    path: Assets/levels/basicTutorial.unity
-    guid: 11b57673f8401924586ecea3ef29e677
-  - enabled: 1
-    path: Assets/levels/explosionLevel.unity
-    guid: 1cb52898994d390419c4cb44f2659e59
+    path: Assets/levels/puzzleLevel.unity
+    guid: fa95e9590cef987499b2a974a39b87cd
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: cfe2ca639eec47e4f9ac315979b4f9f7, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 9e9da7b16872c99498a09a7b230e3302, type: 2}

@@ -21,6 +21,9 @@ public class explosionProgressControl : MonoBehaviour
     public string currentCombo = "";
     //must be a combination of y, r, b with length no longer to 3
     public string solution = "yrb";
+    public string getCurrentCombo => currentCombo; 
+    public UnityEvent comboUpdated; 
+    public UnityEvent comboReset; 
 
     [Header("third challenge")]
     [SerializeField] explosiveCheck wizard; 
@@ -82,8 +85,9 @@ public class explosionProgressControl : MonoBehaviour
         checkCombo();
     }
 
-    private void checkCombo()
+    public void checkCombo()
     {
+        comboUpdated?.Invoke(); 
         if (currentCombo.Length >= 3)
         {
             if (currentCombo.Equals(solution))
@@ -92,6 +96,7 @@ public class explosionProgressControl : MonoBehaviour
                 challengeComplete();
                 secondChallengeComplete?.Invoke();
             }
+            comboReset?.Invoke(); 
             currentCombo = "";
         }
     }

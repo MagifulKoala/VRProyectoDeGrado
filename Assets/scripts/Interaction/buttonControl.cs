@@ -11,6 +11,7 @@ public class buttonControl : MonoBehaviour
     [SerializeField] float yResetPosition; 
     private const string  BUTTON_TRIGGER = "buttonTrigger"; 
     public UnityEvent buttonPressed; 
+    public UnityEvent buttonUnPressed; 
     private void Update()
     {
         checkLimits();    
@@ -36,4 +37,15 @@ public class buttonControl : MonoBehaviour
             buttonPressed?.Invoke();    
         }    
     }
+
+    private void OnCollisionExit(Collision other)
+    {
+        if(other.gameObject.name.Equals(BUTTON_TRIGGER))
+        {
+            Debug.Log("button unpressed");
+            buttonUnPressed?.Invoke();    
+        }        
+    }
+
+
 }

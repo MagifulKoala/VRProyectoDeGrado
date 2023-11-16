@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7353905155112350272
+--- !u!114 &-7392230047050066181
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,13 +20,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: testOutline
-  m_Shader: {fileID: -6465566751694194690, guid: 6635c8f73979ea646a0cb6f274766d69, type: 3}
+  m_Name: ice
+  m_Shader: {fileID: -6465566751694194690, guid: 97b48fc57a6e60440bf6e88a8e5bf43e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -36,6 +36,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _IceTexture:
+        m_Texture: {fileID: 2800000, guid: 41d0a84529f555f4d8a57bed16166417, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -50,9 +54,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Metalic: 0.605
+    - _Normals: -1.45
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _scale: 0.78
+    - _Smoothness: 0.085
+    - _fresnoPower: 5.04
+    - _refraction: 0.33
     m_Colors:
-    - _color: {r: 766.9961, g: 766.9961, b: 766.9961, a: 0}
+    - _Color: {r: 0, g: 0.34307146, b: 2, a: 1}
+    - _fresnoColor: {r: 3.228561, g: 3.228561, b: 3.228561, a: 1}
+    - _iceTiling: {r: 3, g: 3, b: 0, a: 0}
   m_BuildTextureStacks: []
