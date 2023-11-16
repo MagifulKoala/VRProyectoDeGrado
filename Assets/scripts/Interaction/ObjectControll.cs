@@ -177,17 +177,21 @@ public class ObjectControll : SimpleObjectController
     {
         foreach (var obj in collidingObjects)
         {
-            GameObject parent = obj.transform.parent.gameObject;
-            ObjectControll parentObjControl = parent.GetComponent<ObjectControll>(); 
-            if(parentObjControl != null)
+            if (obj != null)
             {
-                if(parentObjControl.isOnfire)
+
+                GameObject parent = obj.transform.parent.gameObject;
+                ObjectControll parentObjControl = parent.GetComponent<ObjectControll>();
+                if (parentObjControl != null)
                 {
-                    parentObjControl.isOnfire = false; 
-                    parentObjControl.particleSystemOn = false; 
+                    if (parentObjControl.isOnfire)
+                    {
+                        parentObjControl.isOnfire = false;
+                        parentObjControl.particleSystemOn = false;
+                    }
                 }
+                Destroy(obj, 1.001f);
             }
-            Destroy(obj,1.001f); 
 
         }
     }
@@ -201,21 +205,21 @@ public class ObjectControll : SimpleObjectController
         }
     }
 
-/*     private void OnCollisionEnter(Collision other)
-    {
-        collidingObjects.Add(other.gameObject);
-    }
-
-    private void OnCollisionExit(Collision other)
-    {
-        foreach (var obj in collidingObjects)
+    /*     private void OnCollisionEnter(Collision other)
         {
-            if (obj.gameObject == other.gameObject)
-            {
-                collidingObjects.Remove(obj);
-            }
+            collidingObjects.Add(other.gameObject);
         }
-    } */
+
+        private void OnCollisionExit(Collision other)
+        {
+            foreach (var obj in collidingObjects)
+            {
+                if (obj.gameObject == other.gameObject)
+                {
+                    collidingObjects.Remove(obj);
+                }
+            }
+        } */
 
     private void OnTriggerExit(Collider other)
     {
@@ -228,7 +232,7 @@ public class ObjectControll : SimpleObjectController
                 break;
             }
         }
-        if(objToRemove != null)
+        if (objToRemove != null)
         {
             collidingObjects.Remove(objToRemove);
         }

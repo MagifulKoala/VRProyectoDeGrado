@@ -75270,7 +75270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d49111072dd6834199b6893cb4dad72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneID: 0
+  sceneID: 4
   idlePortalClip: {fileID: 8300000, guid: 1bfe6466c289f0a42b0962cbb353784a, type: 3}
   traveresePortalClip: {fileID: 8300000, guid: 7af549d62debd074ca7c93a720bbe43d, type: 3}
 --- !u!4 &2643732952766472182

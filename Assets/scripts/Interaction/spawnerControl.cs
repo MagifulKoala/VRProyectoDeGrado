@@ -51,5 +51,6 @@ public class spawnerControl : MonoBehaviour
                 Destroy(child.gameObject);
             }
         }
+
     }
 }

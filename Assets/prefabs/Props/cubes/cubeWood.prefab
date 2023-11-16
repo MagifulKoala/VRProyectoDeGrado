@@ -117,7 +117,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8569621896005682673}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 9999
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -164,12 +164,22 @@ MonoBehaviour:
   explosiveInstance: {fileID: 0}
   fireDamage: 1
   lifePoints: 5
+  collidingObjects: []
   rb: {fileID: 0}
   particleSystemOn: 0
   isOnfire: 0
   isMelting: 0
   explosionInitiated: 0
   ExplosionTriggered:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  objectOnFire:
+    m_PersistentCalls:
+      m_Calls: []
+  objectMelting:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &2121284297503085423
