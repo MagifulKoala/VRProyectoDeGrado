@@ -15,7 +15,7 @@ public class ExplosiveMaterial : MonoBehaviour
     public bool explosionInProgress = false;
     ObjectControll parentObjectControll;
     SphereCollider sphereCollider;
-    Timer timer;
+    public Timer timer;
     TMP_Text explotionTextTime;
     AudioSource explosionAudio;
     bool timerIsOn = false;

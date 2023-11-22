@@ -10,8 +10,7 @@ public class RightHandMaterials : XRDirectInteractor
 
     [SerializeField] GameObject leftHandMaterials;
 
-
-
+    [System.Obsolete]
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
         base.OnSelectEntered(args);
@@ -27,10 +26,14 @@ public class RightHandMaterials : XRDirectInteractor
                 if (newMaterial.name == "explosive")
                 {
                     currentObjControl.changeMaterialSpecial(newMaterial);
+                    if (currentObjControl.initializeMaterialInChildren)
+                    {
+                        currentObjControl.changeMaterialInChildren(newMaterial);
+                    }
                 }
-                else if(currentObjControl.initializeMaterialInChildren)
+                else if (currentObjControl.initializeMaterialInChildren)
                 {
-                    currentObjControl.changeMaterialInChildren(newMaterial); 
+                    currentObjControl.changeMaterialInChildren(newMaterial);
                 }
                 else
                 {

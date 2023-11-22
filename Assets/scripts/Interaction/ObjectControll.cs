@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -78,7 +76,14 @@ public class ObjectControll : SimpleObjectController
 
     private void startParticleSystem(GameObject pParticleSystem)
     {
-        UnityEngine.Vector3 objectSize = transform.GetComponent<Renderer>().bounds.size;
+        Renderer renderer = transform.GetComponent<Renderer>();
+        Vector3 objectSize = new Vector3(1, 1, 1);
+
+        if (renderer != null)
+        {
+            objectSize = renderer.bounds.size;
+        }
+
         UnityEngine.Vector3 spawnPoint = transform.position;
 
         spawnPoint.y += objectSize.y / 2;
@@ -115,8 +120,11 @@ public class ObjectControll : SimpleObjectController
     private void OnTriggerEnter(Collider other)
     {
         //Debug.Log("trigger enters ObjectControll + " + other.gameObject);
-        Debug.Log(other.gameObject);
-        collidingObjects.Add(other.gameObject);
+        //Debug.Log(other.gameObject);
+        if (material.name.Equals("ice"))
+        {
+            collidingObjects.Add(other.gameObject);
+        }
 
         if (other.gameObject.tag == fireParticleTag)
         {
@@ -142,11 +150,27 @@ public class ObjectControll : SimpleObjectController
             {
                 //Debug.Log("explosionInProgress recognized");
                 float explosionPower = explosiveMaterial.explosivePower;
+                if (materialCtrl.isFlammable)
+                {
+                    isOnfire = true;
+                }
+                if (material.name == "explosive")
+                {
+                    explosionInitiated = true;
+                    ExplosionTriggered?.Invoke();
+                    triggerExplosive();
+                }
                 applyExplotion(explosionPower);
             }
         }
 
 
+    }
+
+    private void triggerExplosive()
+    {
+        ExplosiveMaterial em = GetComponentInChildren<ExplosiveMaterial>();
+        em.timer.timeLeft = 0;
     }
 
     private void applyExplotion(float pExplosionMagnitud)
@@ -181,6 +205,7 @@ public class ObjectControll : SimpleObjectController
             {
 
                 GameObject parent = obj.transform.parent.gameObject;
+                if (parent == null) { continue; }
                 ObjectControll parentObjControl = parent.GetComponent<ObjectControll>();
                 if (parentObjControl != null)
                 {

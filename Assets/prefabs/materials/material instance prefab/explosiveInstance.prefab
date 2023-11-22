@@ -241,12 +241,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosiveParticleSystem: {fileID: 8066676672848378873, guid: f37d380d1d7a1e9429fadb5e1443f64c, type: 3}
-  explosivePower: 1500
+  explosivePower: 350
   finalExplosionSize: 3.2
   explosionExpansionRate: 0.2
   explosionTime: 10
   explosionTriggered: 0
   explosionInProgress: 0
+  timer: {fileID: 0}
+  ObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &2683674668881678698
 MonoBehaviour:
   m_ObjectHideFlags: 0

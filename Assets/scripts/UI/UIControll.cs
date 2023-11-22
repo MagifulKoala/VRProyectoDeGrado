@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine.Experimental.Rendering;
 using System;
 
 public class UIControll : MonoBehaviour
@@ -14,10 +11,7 @@ public class UIControll : MonoBehaviour
     [SerializeField] ButtonInteractible xrButton;
     [SerializeField] GameObject keyPointLight;
 
-
-
-
-    // Start is called before the first frame update
+    [Obsolete]
     void Start()
     {
         if (textFields != null)
