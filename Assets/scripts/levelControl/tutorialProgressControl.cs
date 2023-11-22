@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -76,8 +73,11 @@ public class tutorialProgressControl : MonoBehaviour
         Debug.Log(arg0.interactorObject.transform.gameObject.name);
         if (arg0.interactorObject.transform.gameObject.name.Equals("Left Direct Interactor") && currentChallenge == 1)
         {
-            challengeComplete();
-            secondChallengeCompleteEvent?.Invoke();
+            if (currentChallenge == 1)
+            {
+                challengeComplete();
+                secondChallengeCompleteEvent?.Invoke();
+            }
         }
     }
 
@@ -140,10 +140,10 @@ public class tutorialProgressControl : MonoBehaviour
 
     private void prisonDoorUnlocked()
     {
-        if(currentChallenge == 5)
+        if (currentChallenge == 5)
         {
             challengeComplete();
-            sixthChallengeCompleteEvent?.Invoke(); 
+            sixthChallengeCompleteEvent?.Invoke();
         }
     }
 

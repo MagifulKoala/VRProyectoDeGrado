@@ -3789,7 +3789,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "esto es un caj\xF3n !\n"
+  m_text: "esto es un <color=red>caj\xF3n</color> !\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3798,8 +3798,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3816,8 +3816,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 13
-  m_fontSizeBase: 13
+  m_fontSize: 13.64
+  m_fontSizeBase: 13.64
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 1
@@ -4285,7 +4285,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 384508786}
-  m_Father: {fileID: 1431020368}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6006,6 +6006,7 @@ MonoBehaviour:
   explosiveInstance: {fileID: 0}
   fireDamage: 1
   lifePoints: 3
+  collidingObjects: []
   rb: {fileID: 0}
   particleSystemOn: 0
   isOnfire: 0
@@ -6704,7 +6705,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'esto es una puerta !
+  m_text: 'esto es una <b><color=#ebde34>puerta</color></b> !
 
     <-----'
   m_isRightToLeft: 0
@@ -14081,6 +14082,7 @@ Transform:
   - {fileID: 826868198}
   - {fileID: 1610391420}
   - {fileID: 2824738699883705858}
+  - {fileID: 1245665350}
   - {fileID: 111504765}
   - {fileID: 1248592783}
   - {fileID: 829754119}
@@ -16448,7 +16450,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: abre sus puertas  agarrando la manija <color=yellow>amarilla</color>
+  m_text: abre sus puertas  agarrando las manijas <color=yellow>amarillas</color>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16475,7 +16477,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11.25
+  m_fontSize: 10.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -17473,12 +17475,14 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: ecb3718b8ccf2e84ca6adfc19ba5315d, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 0
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
   explosiveInstance: {fileID: 0}
   fireDamage: 1
   lifePoints: 9999
+  collidingObjects: []
   rb: {fileID: 0}
   particleSystemOn: 0
   isOnfire: 0
@@ -18758,7 +18762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8451271583581105123, guid: d8bc4599af6d5d24bb09e8ba78194bdd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.92
+      value: 4.766
       objectReference: {fileID: 0}
     - target: {fileID: 8451271583581105123, guid: d8bc4599af6d5d24bb09e8ba78194bdd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18766,7 +18770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8451271583581105123, guid: d8bc4599af6d5d24bb09e8ba78194bdd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.718
+      value: 0.732
       objectReference: {fileID: 0}
     - target: {fileID: 8451271583581105123, guid: d8bc4599af6d5d24bb09e8ba78194bdd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20820,7 +20824,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1431020368}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 130, y: 0, z: 0}
 --- !u!114 &1223290767
 MonoBehaviour:
@@ -21175,6 +21179,7 @@ MonoBehaviour:
   explosiveInstance: {fileID: 8072844743397403980, guid: 52d3584902fc4774a8d0f4dc5950ca3b, type: 3}
   fireDamage: 1
   lifePoints: 9999
+  collidingObjects: []
   rb: {fileID: 0}
   particleSystemOn: 0
   isOnfire: 0
@@ -21525,6 +21530,7 @@ MonoBehaviour:
   explosiveInstance: {fileID: 8072844743397403980, guid: 52d3584902fc4774a8d0f4dc5950ca3b, type: 3}
   fireDamage: 1
   lifePoints: 9999
+  collidingObjects: []
   rb: {fileID: 0}
   particleSystemOn: 0
   isOnfire: 0
@@ -22079,6 +22085,112 @@ Transform:
   - {fileID: 1251515116}
   m_Father: {fileID: 886251216}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1245665349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1245665350}
+  - component: {fileID: 1245665353}
+  - component: {fileID: 1245665352}
+  - component: {fileID: 1245665351}
+  m_Layer: 0
+  m_Name: infoPanel (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1245665350
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245665349}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.38199997, y: 1.095, z: 0.06700134}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 823098365}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1245665351
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245665349}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1245665352
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245665349}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1245665353
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245665349}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1247953902
 GameObject:
   m_ObjectHideFlags: 0
@@ -22109,7 +22221,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1010298318}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -23155,7 +23267,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.605, y: -0.0021191}
+  m_AnchoredPosition: {x: -0.187, y: -0.0021191}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1260386915
@@ -27501,7 +27613,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "esta puerta est\xE1 cerrada !"
+  m_text: "esta puerta est\xE1 asegurada !"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -29289,6 +29401,7 @@ MonoBehaviour:
   explosiveInstance: {fileID: 8072844743397403980, guid: 52d3584902fc4774a8d0f4dc5950ca3b, type: 3}
   fireDamage: 1
   lifePoints: 9999
+  collidingObjects: []
   rb: {fileID: 0}
   particleSystemOn: 0
   isOnfire: 0
@@ -30070,7 +30183,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1010298318}
   - {fileID: 771181007}
   - {fileID: 24809279}
   m_Father: {fileID: 2119113682}
@@ -32999,41 +33111,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1656844928}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: "Esta puerta <b>YA NO</b> est\xE1 asegurada !"
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: characterDialogue, Assembly-CSharp
-        m_MethodName: completeChallenge
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
   doorLocked:
     m_PersistentCalls:
@@ -33048,6 +33136,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1656844928}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "Esta puerta est\xE1 asegurada !"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!135 &1902334601
@@ -35439,12 +35539,14 @@ MonoBehaviour:
   - {fileID: 2095905020852077598, guid: ecb3718b8ccf2e84ca6adfc19ba5315d, type: 3}
   initializeMaterialInChildren: 0
   dontInitializeMaterial: 0
+  menu: {fileID: 0}
   materialCtrl: {fileID: 0}
   meltingParticleSystem: {fileID: 6455553537150452258, guid: b2fb55f4e5511b846b15faa28a661fc1, type: 3}
   onFireParticleSystem: {fileID: 1354610769607933084, guid: cd18de7389820e74e9f2b1c5542b1d9d, type: 3}
   explosiveInstance: {fileID: 0}
   fireDamage: 1
   lifePoints: 9999
+  collidingObjects: []
   rb: {fileID: 0}
   particleSystemOn: 0
   isOnfire: 0
@@ -61974,6 +62076,9 @@ MonoBehaviour:
             !!!
           m_BoolArgument: 0
         m_CallState: 2
+  buttonUnPressed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!33 &4266928582325269398
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -63739,7 +63844,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360066431179229791}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.003}
+  m_LocalPosition: {x: 0, y: 0, z: -0.012}
   m_LocalScale: {x: 0.12694, y: 0.12694, z: 0.12694}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -69304,6 +69409,7 @@ MonoBehaviour:
   explosiveInstance: {fileID: 0}
   fireDamage: 1
   lifePoints: 9999
+  collidingObjects: []
   rb: {fileID: 0}
   particleSystemOn: 0
   isOnfire: 0
@@ -71394,7 +71500,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4744027665478015007}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -72256,7 +72362,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Te acuerdas c\xF3mo agarra objetos ? jajajaja"
+  m_text: "Te acuerdas c\xF3mo agarrar objetos ? jajajaja"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -72570,6 +72676,7 @@ MonoBehaviour:
   explosiveInstance: {fileID: 8072844743397403980, guid: 52d3584902fc4774a8d0f4dc5950ca3b, type: 3}
   fireDamage: 1
   lifePoints: 9999
+  collidingObjects: []
   rb: {fileID: 0}
   particleSystemOn: 0
   isOnfire: 0
@@ -74056,6 +74163,7 @@ MonoBehaviour:
   explosiveInstance: {fileID: 0}
   fireDamage: 1
   lifePoints: 9999
+  collidingObjects: []
   rb: {fileID: 0}
   particleSystemOn: 0
   isOnfire: 0
@@ -74722,7 +74830,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1431020368}
   - {fileID: 7494500096331221234}
   - {fileID: 6961391493460977758}
   - {fileID: 5989057882030555061}
@@ -81448,7 +81555,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2609691872429497813}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -82556,3 +82663,6 @@ SceneRoots:
   - {fileID: 1544147579}
   - {fileID: 753897939}
   - {fileID: 1851570521}
+  - {fileID: 264357841}
+  - {fileID: 1223290766}
+  - {fileID: 1247953903}

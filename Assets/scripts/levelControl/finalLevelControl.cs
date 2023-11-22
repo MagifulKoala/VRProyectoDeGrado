@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -78,7 +77,7 @@ public class finalLevelControl : MonoBehaviour
     private void secondWallBreached()
     {
         challengeComplete();
-        secondChallengeComplete?.Invoke();
+        thirdChallengeComplete?.Invoke();
     }
 
 
