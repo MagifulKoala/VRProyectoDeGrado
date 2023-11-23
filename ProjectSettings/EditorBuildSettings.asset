@@ -9,14 +9,11 @@ EditorBuildSettings:
     path: Assets/levels/MainMenu.unity
     guid: 39d9c8c543042ff4fb1bc24b5a3666e0
   - enabled: 1
+    path: Assets/levels/basicTutorial.unity
+    guid: 11b57673f8401924586ecea3ef29e677
+  - enabled: 1
     path: Assets/levels/tutorialLevel.unity
     guid: bd5510051748af645a858b3fa3170b38
-  - enabled: 1
-    path: Assets/levels/Level1.unity
-    guid: 710fb2a70c49b9c4bad59d0f05eb442b
-  - enabled: 1
-    path: Assets/levels/testLevel.unity
-    guid: c50cad1b279e5c142a2ead723cba6b4f
   - enabled: 1
     path: Assets/levels/puzzleLevel.unity
     guid: fa95e9590cef987499b2a974a39b87cd
