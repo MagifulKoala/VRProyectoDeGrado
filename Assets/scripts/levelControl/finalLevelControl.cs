@@ -31,17 +31,7 @@ public class finalLevelControl : MonoBehaviour
         initializeThirdChallenge();
     }
 
-    //third challenge
-    private void initializeThirdChallenge()
-    {
-        //finalDoor.doorUnlocked.AddListener(finalDoorOpened);
-        secondWallCheck.explosionDetected.AddListener(secondWallBreached);
-    }
 
-    private void finalDoorOpened()
-    {
-        thirdChallengeComplete?.Invoke(); 
-    }
 
     //First challenge
     private void initializeFirstChallenge()
@@ -58,12 +48,6 @@ public class finalLevelControl : MonoBehaviour
         firstChallengeComplete?.Invoke();
     }
 
-    private void firstWallBreached()
-    {
-        challengeComplete();
-        firstChallengeComplete?.Invoke();
-    }
-
     //second challenge
 
     private void initializeSecondChallenge()
@@ -73,6 +57,25 @@ public class finalLevelControl : MonoBehaviour
             firstWallCheck.explosionDetected.AddListener(firstWallBreached);
         }
     }
+
+
+    private void firstWallBreached()
+    {
+        challengeComplete();
+        secondChallengeComplete?.Invoke();
+    }
+
+    //third challenge
+    private void initializeThirdChallenge()
+    {
+        //finalDoor.doorUnlocked.AddListener(finalDoorOpened);
+        secondWallCheck.explosionDetected.AddListener(secondWallBreached);
+    }
+
+    /*     private void finalDoorOpened()
+        {
+            thirdChallengeComplete?.Invoke();
+        } */
 
     private void secondWallBreached()
     {

@@ -14,7 +14,8 @@ public class explosiveCheck : MonoBehaviour
             if (objControl.material.name.Equals("explosive"))
             {
                 currentExplosive = other; 
-                currentExplosive.gameObject.GetComponent<ObjectControll>().GetComponentInChildren<ExplosiveMaterial>().ObjectDestroyed.AddListener(objExploded); 
+                //currentExplosive.gameObject.GetComponent<ObjectControll>().GetComponentInChildren<ExplosiveMaterial>().ObjectDestroyed.AddListener(objExploded); 
+                currentExplosive.gameObject.GetComponentInChildren<ExplosiveMaterial>().ObjectDestroyed.AddListener(objExploded); 
             }
 
         }
