@@ -27,7 +27,17 @@ public class PortalControll : MonoBehaviour
         if(other.gameObject.tag.Equals("Player"))
         {
             playClip(traveresePortalClip);
-            SceneManager.LoadScene(sceneID);
+            //SceneManager.LoadScene(sceneID);
+            int nextSceneId = SceneManager.GetActiveScene().buildIndex;
+
+            if(nextSceneId < SceneManager.sceneCount)
+            {
+                SceneManager.LoadScene(nextSceneId);
+            }
+            else
+            {
+                SceneManager.LoadScene(0);
+            }
         }    
     }
 
