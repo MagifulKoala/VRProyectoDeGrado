@@ -28,9 +28,11 @@ public class PortalControll : MonoBehaviour
         {
             playClip(traveresePortalClip);
             //SceneManager.LoadScene(sceneID);
-            int nextSceneId = SceneManager.GetActiveScene().buildIndex;
+            int nextSceneId = SceneManager.GetActiveScene().buildIndex+1;
 
-            if(nextSceneId < SceneManager.sceneCount)
+            //Debug.Log("current scene id:" + SceneManager.GetActiveScene().buildIndex + "nextSceneId " + nextSceneId);
+
+            if(nextSceneId < SceneManager.sceneCountInBuildSettings)
             {
                 SceneManager.LoadScene(nextSceneId);
             }

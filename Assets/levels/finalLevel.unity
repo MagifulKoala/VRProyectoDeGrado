@@ -20809,7 +20809,7 @@ Transform:
   m_GameObject: {fileID: 675617916}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09, y: 0.708, z: 4.678}
+  m_LocalPosition: {x: 0.09, y: 0.708, z: 4.559}
   m_LocalScale: {x: 0.42719057, y: 1.4398252, z: 0.3477267}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24041,7 +24041,7 @@ Transform:
   m_GameObject: {fileID: 773514054}
   serializedVersion: 2
   m_LocalRotation: {x: 0.060112692, y: 0.704547, z: -0.704547, w: 0.060112692}
-  m_LocalPosition: {x: 4.43, y: 1.342, z: 4.233}
+  m_LocalPosition: {x: 4.301, y: 1.342, z: 4.234}
   m_LocalScale: {x: 0.18365084, y: 0.18365079, z: 0.1836508}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -49592,7 +49592,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4f34d5019ddc2b2428799ff1dd8f9294, type: 2}
+  - {fileID: 2100000, guid: f51143522acdf614db3bfe93af67f618, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -66455,13 +66455,13 @@ MonoBehaviour:
   m_PlayHapticsOnSelectEntered: 0
   m_HapticSelectEnterIntensity: 0
   m_HapticSelectEnterDuration: 0
-  m_PlayHapticsOnSelectExited: 1
+  m_PlayHapticsOnSelectExited: 0
   m_HapticSelectExitIntensity: 0.146
   m_HapticSelectExitDuration: 0.3
   m_PlayHapticsOnSelectCanceled: 0
   m_HapticSelectCancelIntensity: 0
   m_HapticSelectCancelDuration: 0
-  m_PlayHapticsOnHoverEntered: 1
+  m_PlayHapticsOnHoverEntered: 0
   m_HapticHoverEnterIntensity: 0.14
   m_HapticHoverEnterDuration: 0.2
   m_PlayHapticsOnHoverExited: 0
@@ -66470,7 +66470,7 @@ MonoBehaviour:
   m_PlayHapticsOnHoverCanceled: 0
   m_HapticHoverCancelIntensity: 0
   m_HapticHoverCancelDuration: 0
-  m_AllowHoverHapticsWhileSelecting: 1
+  m_AllowHoverHapticsWhileSelecting: 0
   m_LineType: 1
   m_BlendVisualLinePoints: 1
   m_MaxRaycastDistance: 30
@@ -68795,13 +68795,13 @@ MonoBehaviour:
   m_PlayHapticsOnSelectEntered: 0
   m_HapticSelectEnterIntensity: 0
   m_HapticSelectEnterDuration: 0
-  m_PlayHapticsOnSelectExited: 1
+  m_PlayHapticsOnSelectExited: 0
   m_HapticSelectExitIntensity: 0.146
   m_HapticSelectExitDuration: 0.3
   m_PlayHapticsOnSelectCanceled: 0
   m_HapticSelectCancelIntensity: 0
   m_HapticSelectCancelDuration: 0
-  m_PlayHapticsOnHoverEntered: 1
+  m_PlayHapticsOnHoverEntered: 0
   m_HapticHoverEnterIntensity: 0.14
   m_HapticHoverEnterDuration: 0.2
   m_PlayHapticsOnHoverExited: 0
@@ -68810,7 +68810,7 @@ MonoBehaviour:
   m_PlayHapticsOnHoverCanceled: 0
   m_HapticHoverCancelIntensity: 0
   m_HapticHoverCancelDuration: 0
-  m_AllowHoverHapticsWhileSelecting: 1
+  m_AllowHoverHapticsWhileSelecting: 0
   m_LineType: 1
   m_BlendVisualLinePoints: 1
   m_MaxRaycastDistance: 30

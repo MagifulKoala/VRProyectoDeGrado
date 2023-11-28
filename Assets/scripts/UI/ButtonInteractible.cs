@@ -42,7 +42,10 @@ public class ButtonInteractible : XRSimpleInteractable
     {
         base.OnHoverEntered(args);
         buttonIsSelected = false;
-        imageButton.color = highlightedColor;
+        if (imageButton != null)
+        {
+            imageButton.color = highlightedColor;
+        }
     }
 
     protected override void OnHoverExited(HoverExitEventArgs args)
@@ -50,7 +53,10 @@ public class ButtonInteractible : XRSimpleInteractable
         base.OnHoverExited(args);
         if (!buttonIsSelected)
         {
-            imageButton.color = normalColor;
+            if (imageButton != null)
+            {
+                imageButton.color = normalColor;
+            }
         }
 
     }
@@ -61,7 +67,10 @@ public class ButtonInteractible : XRSimpleInteractable
 
 
         buttonIsSelected = true;
-        imageButton.color = pressedColor;
+        if (imageButton != null)
+        {
+            imageButton.color = pressedColor;
+        }
 
     }
 
@@ -70,7 +79,10 @@ public class ButtonInteractible : XRSimpleInteractable
         base.OnSelectExited(args);
 
         buttonIsSelected = false;
-        imageButton.color = pressedColor;
+        if (imageButton != null)
+        {
+            imageButton.color = pressedColor;
+        }
 
     }
 
