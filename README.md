@@ -1,6 +1,6 @@
-![image](https://github.com/MagifulKoala/VRProyectoDeGrado/assets/60184415/0af7e675-1b9e-49ef-b4ed-20249a2e08c7)# VRProyectoDeGrado
+# VRProyectoDeGrado
 VR game
-
+---
 ### YouTube video
 ##### click image to go to trailer
 ---
